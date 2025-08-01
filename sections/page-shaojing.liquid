@@ -1,0 +1,353 @@
+<link rel="stylesheet" href="{{ 'component-page-shaojing.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-page-shaojing.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="page-shaojing section-block-{{section.id}}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="{% if section.settings.container == 'fullwidth' %}container-full{% elsif section.settings.container == '1770' %}container-1770{% elsif section.settings.container == '1170' %}container-1170{% else %}container{% endif %}">
+        <!-- 页面标题 -->
+        <div class="page-header text-center">
+            <h1 class="page-title"
+                style="
+                    --color-heading-style: {{ section.settings.heading_color }};
+                    --fontsize-heading-style: {{ section.settings.heading_size | append: 'px' }};
+                    --heading-size-mb-style: {{ section.settings.heading_size_mb | append: 'px' }}
+                "
+            >
+                {%- if section.settings.page.title != blank -%}
+                    {{ section.settings.page.title | escape }}
+                {%- else -%}
+                    {{ 'general.page_shaojing.about_me' | t }}
+                {%- endif -%}
+            </h1>
+        </div>
+
+        <!-- 个人介绍内容 -->
+        <div class="profile-content">
+            <!-- 头像和基本信息 -->
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    {%- if section.settings.avatar != blank -%}
+                        <img src="{{ section.settings.avatar | img_url: '300x300', crop: 'center' }}" 
+                             alt="个人头像" 
+                             loading="lazy"
+                             width="300" 
+                             height="300">
+                    {%- else -%}
+                        <div class="avatar-placeholder">
+                            <svg width="300" height="300" viewBox="0 0 300 300">
+                                <circle cx="150" cy="150" r="150" fill="#f0f0f0"/>
+                                <circle cx="150" cy="120" r="40" fill="#ccc"/>
+                                <path d="M150 180 Q 80 280 220 280" stroke="#ccc" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                    {%- endif -%}
+                </div>
+                
+                <div class="profile-info">
+                    <h2 class="profile-name">{{ section.settings.name | default: 'general.page_shaojing.your_name' | t }}</h2>
+                    <p class="profile-title">{{ section.settings.title | default: 'general.page_shaojing.your_title' | t }}</p>
+                    <p class="profile-location">{{ section.settings.location | default: 'general.page_shaojing.your_location' | t }}</p>
+                    
+                    <!-- 社交媒体链接 -->
+                    {%- if section.settings.show_social_links -%}
+                        <div class="social-links">
+                            {%- if section.settings.github_url != blank -%}
+                                <a href="{{ section.settings.github_url }}" target="_blank" rel="noopener" class="social-link github">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            {%- endif -%}
+                            
+                            {%- if section.settings.linkedin_url != blank -%}
+                                <a href="{{ section.settings.linkedin_url }}" target="_blank" rel="noopener" class="social-link linkedin">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                            {%- endif -%}
+                            
+                            {%- if section.settings.twitter_url != blank -%}
+                                <a href="{{ section.settings.twitter_url }}" target="_blank" rel="noopener" class="social-link twitter">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                            {%- endif -%}
+                        </div>
+                    {%- endif -%}
+                </div>
+            </div>
+
+            <!-- 详细内容 -->
+            <div class="profile-details">
+                {%- if section.settings.page.content != blank -%}
+                    <div class="profile-description">
+                        {{ section.settings.page.content }}
+                    </div>
+                {%- else -%}
+                    <div class="profile-description">
+                        <h3>{{ 'general.page_shaojing.about_me' | t }}</h3>
+                        <p>{{ 'general.page_shaojing.add_content' | t }}</p>
+                        
+                        <h3>{{ 'general.page_shaojing.skills' | t }}</h3>
+                        <ul class="skills-list">
+                            <li>{{ 'general.page_shaojing.skill_1' | t }}</li>
+                            <li>{{ 'general.page_shaojing.skill_2' | t }}</li>
+                            <li>{{ 'general.page_shaojing.skill_3' | t }}</li>
+                        </ul>
+                        
+                        <h3>{{ 'general.page_shaojing.experience' | t }}</h3>
+                        <div class="experience-item">
+                            <h4>{{ 'general.page_shaojing.job_title' | t }}</h4>
+                            <p class="company">{{ 'general.page_shaojing.company_name' | t }}</p>
+                            <p class="period">{{ 'general.page_shaojing.job_period' | t }}</p>
+                            <p>{{ 'general.page_shaojing.job_description' | t }}</p>
+                        </div>
+                    </div>
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    {%- liquid
+        assign mg_top_desktop = section.settings.mg_top_desktop
+        assign mg_top_tablet = section.settings.mg_top_tablet
+        assign mg_top_mobile = section.settings.mg_top_mobile
+        assign mg_bottom_desktop = section.settings.mg_bottom_desktop
+        assign mg_bottom_tablet = section.settings.mg_bottom_tablet
+        assign mg_bottom_mobile = section.settings.mg_bottom_mobile
+        assign padding_full_width = section.settings.padding_full_width
+        assign heading_color = section.settings.heading_color
+        assign heading_size = section.settings.heading_size
+        assign heading_size_mb = section.settings.heading_size_mb
+    -%}
+
+    .section-block-{{section.id}} .page-title {
+        font-size: var(--fontsize-heading-style);
+        color: var(--color-heading-style);
+    }
+
+    @media (min-width: 1200px) {
+        .section-block-{{section.id}} {
+            padding-top: {{ mg_top_desktop | append: 'px' }};
+            padding-bottom: {{ mg_bottom_desktop | append: 'px' }};
+        }
+    }
+
+    @media (min-width: 1025px) {
+        {% if section.settings.container == 'fullwidth' %}
+            .section-block-{{section.id}} .container-full {
+                padding-left: {{ padding_full_width | append: 'px' }};
+                padding-right: {{ padding_full_width | append: 'px' }};
+            }
+        {% endif %}
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .section-block-{{section.id}} {
+            padding-top: {{ mg_top_tablet | append: 'px' }};
+            padding-bottom: {{ mg_bottom_tablet | append: 'px' }};
+        }
+    }
+
+    @media (max-width: 767px) {
+        .section-block-{{section.id}} {
+            padding-top: {{ mg_top_mobile | append: 'px' }};
+            padding-bottom: {{ mg_bottom_mobile | append: 'px' }};
+            font-size: var(--heading-size-mb-style);
+        }
+    }
+</style>
+
+{% schema %}
+{
+    "name": "个人介绍页面",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "page",
+            "id": "page",
+            "label": "页面"
+        },
+        {
+            "type": "header",
+            "content": "个人信息设置"
+        },
+        {
+            "type": "image_picker",
+            "id": "avatar",
+            "label": "个人头像"
+        },
+        {
+            "type": "text",
+            "id": "name",
+            "label": "姓名",
+            "default": "您的姓名"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "职位",
+            "default": "您的职位"
+        },
+        {
+            "type": "text",
+            "id": "location",
+            "label": "位置",
+            "default": "您的位置"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_social_links",
+            "label": "显示社交媒体链接",
+            "default": true
+        },
+        {
+            "type": "url",
+            "id": "github_url",
+            "label": "GitHub 链接"
+        },
+        {
+            "type": "url",
+            "id": "linkedin_url",
+            "label": "LinkedIn 链接"
+        },
+        {
+            "type": "url",
+            "id": "twitter_url",
+            "label": "Twitter 链接"
+        },
+        {
+            "type": "header",
+            "content": "样式设置"
+        },
+        {
+            "type": "select",
+            "id": "container",
+            "label": "容器宽度",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "默认"
+                },
+                {
+                    "value": "1170",
+                    "label": "1170px"
+                },
+                {
+                    "value": "1770",
+                    "label": "1770px"
+                },
+                {
+                    "value": "fullwidth",
+                    "label": "全宽"
+                }
+            ],
+            "default": "default"
+        },
+        {
+            "type": "color",
+            "id": "heading_color",
+            "label": "标题颜色",
+            "default": "#000000"
+        },
+        {
+            "type": "range",
+            "id": "heading_size",
+            "label": "标题字体大小",
+            "min": 20,
+            "max": 60,
+            "step": 2,
+            "unit": "px",
+            "default": 36
+        },
+        {
+            "type": "range",
+            "id": "heading_size_mb",
+            "label": "移动端标题字体大小",
+            "min": 16,
+            "max": 40,
+            "step": 2,
+            "unit": "px",
+            "default": 24
+        },
+        {
+            "type": "header",
+            "content": "间距设置"
+        },
+        {
+            "type": "range",
+            "id": "mg_top_desktop",
+            "label": "桌面端上边距",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_desktop",
+            "label": "桌面端下边距",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "mg_top_tablet",
+            "label": "平板端上边距",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_tablet",
+            "label": "平板端下边距",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "mg_top_mobile",
+            "label": "移动端上边距",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_mobile",
+            "label": "移动端下边距",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type": "range",
+            "id": "padding_full_width",
+            "label": "全宽模式内边距",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 15
+        }
+    ]
+}
+{% endschema %} 

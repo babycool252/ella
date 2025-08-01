@@ -1,16 +1,27 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "breadcrumb": {
       "home": "首頁"
+    },
+    "page_shaojing": {
+      "about_me": "关于我",
+      "skills": "技能专长",
+      "experience": "工作经历",
+      "contact": "联系方式",
+      "your_name": "您的姓名",
+      "your_title": "您的职位",
+      "your_location": "您的位置",
+      "add_content": "在这里添加您的个人介绍内容...",
+      "skill_1": "技能 1",
+      "skill_2": "技能 2", 
+      "skill_3": "技能 3",
+      "job_title": "职位名称",
+      "company_name": "公司名称",
+      "job_period": "2020 - 至今",
+      "job_description": "工作描述...",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
     },
     "common": {
       "close": "关闭",

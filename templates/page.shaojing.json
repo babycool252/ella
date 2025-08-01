@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-shaojing",
+      "settings": {
+        "page": "page-shaojing"
+      }
+    }
+  },
+  "order": ["main"]
+} 
