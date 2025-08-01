@@ -1,0 +1,377 @@
+{
+  "sections": {
+    "hero_banner": {
+      "type": "custom-image-banner",
+      "settings": {
+        "custom_image_banner_title": "Heritage of Style",
+        "title_align": "left",
+        "container": "fullwidth",
+        "custom_image_banner_des": "DISCOVER THE COLLECTION"
+      },
+      "blocks": [
+        {
+          "type": "smallImg",
+          "settings": {
+            "enable_item_1": true,
+            "image_1": "",
+            "link_1": "",
+            "title_1": "Heritage of Style",
+            "sub_title_1": "DISCOVER THE COLLECTION",
+            "title_align": "left",
+            "align_items": "flex-start",
+            "item_width_1": "100%",
+            "item_spacing_1": 0
+          }
+        }
+      ]
+    },
+    "heritage_continuation": {
+      "type": "custom-image-banner",
+      "settings": {
+        "container": "fullwidth",
+        "custom_image_banner_title": "Heritage of Style"
+      },
+      "blocks": [
+        {
+          "type": "smallImg",
+          "settings": {
+            "enable_item_1": true,
+            "image_1": "",
+            "link_1": "",
+            "title_1": "Heritage of Style",
+            "title_align": "left",
+            "align_items": "flex-start",
+            "item_width_1": "100%",
+            "item_spacing_1": 0
+          }
+        }
+      ]
+    },
+    "necklaces_section": {
+      "type": "product-category-filter",
+      "settings": {
+        "filter_title": "Categories",
+        "show_navigation_arrows": true,
+        "container": "default"
+      },
+      "blocks": [
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "BRACELETS",
+            "category_handle": "bracelets",
+            "is_active": false
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "EARRINGS",
+            "category_handle": "earrings",
+            "is_active": false
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "RINGS",
+            "category_handle": "rings",
+            "is_active": false
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "BROOCHES",
+            "category_handle": "brooches",
+            "is_active": false
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "NECKLACES",
+            "category_handle": "necklaces",
+            "is_active": true
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "product_image": "",
+            "product_title": "Star Pendant Necklace",
+            "product_price": "$2,500",
+            "product_category": "necklaces"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "product_image": "",
+            "product_title": "Classic Gold Chain",
+            "product_price": "$1,800",
+            "product_category": "necklaces"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "product_image": "",
+            "product_title": "Gemstone Necklace",
+            "product_price": "$3,200",
+            "product_category": "necklaces"
+          }
+        }
+      ]
+    },
+    "zodiac_section": {
+      "type": "spotlight-block",
+      "settings": {
+        "spotlight_block_title": "Zodiac",
+        "title_align": "center",
+        "container": "default",
+        "column": 2,
+        "column_mb": "1",
+        "item_distance": 0,
+        "block_layout": "grid"
+      },
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "Zodiac",
+            "sub_title": "DISCOVER YOUR SIGN",
+            "des": "Each zodiac sign tells a unique story. Discover your personalized piece that reflects your celestial journey and individual character.",
+            "button": "SHOP THE COLLECTION",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "Zodiac",
+            "sub_title": "DISCOVER YOUR SIGN",
+            "des": "Each zodiac sign tells a unique story. Discover your personalized piece that reflects your celestial journey and individual character.",
+            "button": "SHOP THE COLLECTION",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        }
+      ]
+    },
+    "lifestyle_section": {
+      "type": "custom-image-banner",
+      "settings": {
+        "container": "default",
+        "item_distance": 0
+      },
+      "blocks": [
+        {
+          "type": "smallImg",
+          "settings": {
+            "enable_item_1": true,
+            "enable_item_2": true,
+            "enable_item_3": true,
+            "enable_item_4": true,
+            "image_1": "",
+            "image_2": "",
+            "image_3": "",
+            "image_4": "",
+            "item_width_1": "50%",
+            "item_width_2": "50%",
+            "item_width_3": "50%",
+            "item_width_4": "50%",
+            "item_grid_gap": 0,
+            "item_spacing_1": 0,
+            "item_spacing_2": 0,
+            "item_spacing_3": 0,
+            "item_spacing_4": 0
+          }
+        }
+      ]
+    },
+    "very_verdura_section": {
+      "type": "spotlight-block",
+      "settings": {
+        "spotlight_block_title": "Very Verdura",
+        "title_align": "center",
+        "container": "default",
+        "column": 2,
+        "column_mb": "1",
+        "item_distance": 0,
+        "block_layout": "grid"
+      },
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "Very Verdura",
+            "sub_title": "GIFTS FOR EVERY OCCASION",
+            "des": "A collection of special pieces for gifting and receiving.",
+            "button": "SHOP NOW",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "Very Verdura",
+            "sub_title": "GIFTS FOR EVERY OCCASION",
+            "des": "A collection of special pieces for gifting and receiving.",
+            "button": "SHOP NOW",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        }
+      ]
+    },
+    "visit_section": {
+      "type": "spotlight-block",
+      "settings": {
+        "spotlight_block_title": "Visit",
+        "title_align": "left",
+        "container": "default",
+        "column": 2,
+        "column_mb": "1",
+        "item_distance": 0,
+        "block_layout": "grid"
+      },
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "enable_image": false,
+            "title": "Visit",
+            "sub_title": "OUR SALON",
+            "des": "BY APPOINTMENT ONLY<br>745 Fifth Avenue<br>New York, NY 10151",
+            "button": "BOOK AN APPOINTMENT",
+            "title_align": "left",
+            "align_items": "flex-start"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "",
+            "sub_title": "",
+            "des": "",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        }
+      ]
+    },
+    "new_arrivals_section": {
+      "type": "product-block",
+      "settings": {
+        "product_block_title": "New Arrivals",
+        "title_align": "center",
+        "product_block_collection": "",
+        "product_block_limit": 3,
+        "product_block_layout": "grid",
+        "product_block_swipe_on_mobile": true,
+        "container": "default",
+        "column": 3,
+        "column_mb": "1",
+        "grid_gap": 30,
+        "item_distance": 30
+      }
+    },
+    "heritage_story_section": {
+      "type": "spotlight-block",
+      "settings": {
+        "spotlight_block_title": "Heritage",
+        "title_align": "left",
+        "container": "default",
+        "column": 2,
+        "column_mb": "1",
+        "item_distance": 0,
+        "block_layout": "grid"
+      },
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "",
+            "sub_title": "",
+            "des": "",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "enable_image": false,
+            "title": "Heritage",
+            "sub_title": "THE VERDURA STORY",
+            "des": "In 1939, Duke Fulco di Verdura created a new standard of luxury jewelry design. His innovative approach combined classical elegance with modern sophistication, establishing a legacy that continues to inspire today.",
+            "button": "READ THE FULL STORY",
+            "title_align": "left",
+            "align_items": "flex-start"
+          }
+        }
+      ]
+    },
+    "newsletter_section": {
+      "type": "newsletter",
+      "settings": {
+        "container": "default",
+        "section_text_align": "center",
+        "justify_section_content": "center",
+        "section_item_distance": 0
+      },
+      "blocks": [
+        {
+          "type": "newsletter",
+          "settings": {
+            "section_title": "Sign up now",
+            "section_subtitle": "RECEIVE EXCLUSIVE UPDATES,<br>NEW ARRIVALS & MORE.",
+            "input_placeholder": "EMAIL ADDRESS",
+            "button_text": "SUBMIT",
+            "section_title_font_size": 48,
+            "section_title_font_size_mb": 32,
+            "section_subtitle_font_size": 16,
+            "section_subtitle_font_size_mb": 14,
+            "button_font_size": 14,
+            "button_width": 120,
+            "show_between_input_button": false,
+            "form_gap": 20
+          }
+        }
+      ]
+    }
+  },
+  "order": [
+    "hero_banner",
+    "heritage_continuation",
+    "necklaces_section",
+    "zodiac_section",
+    "lifestyle_section",
+    "very_verdura_section",
+    "visit_section",
+    "new_arrivals_section",
+    "heritage_story_section",
+    "newsletter_section"
+  ]
+} 
