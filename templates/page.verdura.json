@@ -20,7 +20,13 @@
             "title_align": "left",
             "align_items": "flex-start",
             "item_width_1": "100%",
-            "item_spacing_1": 0
+            "item_spacing_1": 0,
+            "color_title_1": "#ffffff",
+            "color_sub_title_1": "#ffffff",
+            "fontsize_title": 48,
+            "fontsize_sub_title": 16,
+            "mg_bottom_title": 20,
+            "mg_bottom_sub_title": 10
           }
         }
       }
@@ -117,7 +123,7 @@
           "type": "product",
           "settings": {
             "product_image": "",
-            "product_title": "Gemstone Necklace",
+            "product_title": "Gemstone Necklace with Blue and Green Stones",
             "product_price": "$3,200",
             "product_category": "necklaces"
           }
@@ -133,7 +139,8 @@
         "column": "2",
         "column_mb": "1",
         "item_distance": 0,
-        "block_layout": "grid"
+        "block_layout": "grid",
+        "spotlight_block_bg": "#fef7f7"
       },
       "blocks": {
         "zodiac_left": {
@@ -147,7 +154,15 @@
             "des": "Each zodiac sign tells a unique story. Discover your personalized piece that reflects your celestial journey and individual character.",
             "button": "SHOP THE COLLECTION",
             "title_align": "center",
-            "align_items": "center"
+            "align_items": "center",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16
           }
         },
         "zodiac_right": {
@@ -161,7 +176,15 @@
             "des": "Each zodiac sign tells a unique story. Discover your personalized piece that reflects your celestial journey and individual character.",
             "button": "SHOP THE COLLECTION",
             "title_align": "center",
-            "align_items": "center"
+            "align_items": "center",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16
           }
         }
       }
@@ -170,7 +193,8 @@
       "type": "custom-image-banner",
       "settings": {
         "container": "default",
-        "item_distance": 0
+        "item_distance": 0,
+        "custom_image_banner_bg": "#f8f6f4"
       },
       "blocks": {
         "lifestyle_grid": {
@@ -206,7 +230,8 @@
         "column": "2",
         "column_mb": "1",
         "item_distance": 0,
-        "block_layout": "grid"
+        "block_layout": "grid",
+        "spotlight_block_bg": "#ffffff"
       },
       "blocks": {
         "very_verdura_left": {
@@ -220,7 +245,15 @@
             "des": "A collection of special pieces for gifting and receiving.",
             "button": "SHOP NOW",
             "title_align": "center",
-            "align_items": "center"
+            "align_items": "center",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16
           }
         },
         "very_verdura_right": {
@@ -234,7 +267,15 @@
             "des": "A collection of special pieces for gifting and receiving.",
             "button": "SHOP NOW",
             "title_align": "center",
-            "align_items": "center"
+            "align_items": "center",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16
           }
         }
       }
@@ -248,7 +289,8 @@
         "column": "2",
         "column_mb": "1",
         "item_distance": 0,
-        "block_layout": "grid"
+        "block_layout": "grid",
+        "spotlight_block_bg": "#fef7f7"
       },
       "blocks": {
         "visit_text": {
@@ -260,7 +302,15 @@
             "des": "BY APPOINTMENT ONLY<br>745 Fifth Avenue<br>New York, NY 10151",
             "button": "BOOK AN APPOINTMENT",
             "title_align": "left",
-            "align_items": "flex-start"
+            "align_items": "flex-start",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16
           }
         },
         "visit_image": {
@@ -291,7 +341,11 @@
         "column": "3",
         "column_mb": "1",
         "grid_gap": 30,
-        "item_distance": 30
+        "item_distance": 30,
+        "product_bg": "#ffffff",
+        "color_title": "#333333",
+        "fontsize_title": 36,
+        "fontsize_title_mb": 24
       }
     },
     "heritage_story_section": {
@@ -303,7 +357,8 @@
         "column": "2",
         "column_mb": "1",
         "item_distance": 0,
-        "block_layout": "grid"
+        "block_layout": "grid",
+        "spotlight_block_bg": "#fef7f7"
       },
       "blocks": {
         "heritage_image": {
@@ -328,7 +383,15 @@
             "des": "In 1939, Duke Fulco di Verdura created a new standard of luxury jewelry design. His innovative approach combined classical elegance with modern sophistication, establishing a legacy that continues to inspire today.",
             "button": "READ THE FULL STORY",
             "title_align": "left",
-            "align_items": "flex-start"
+            "align_items": "flex-start",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16
           }
         }
       }
@@ -339,7 +402,8 @@
         "container": "default",
         "section_text_align": "center",
         "justify_section_content": "center",
-        "section_item_distance": 0
+        "section_item_distance": 0,
+        "background": "#ffffff"
       },
       "blocks": {
         "newsletter_form": {
