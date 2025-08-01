@@ -8,8 +8,8 @@
         "container": "fullwidth",
         "custom_image_banner_des": "DISCOVER THE COLLECTION"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "hero_banner_block": {
           "type": "smallImg",
           "settings": {
             "enable_item_1": true,
@@ -23,7 +23,7 @@
             "item_spacing_1": 0
           }
         }
-      ]
+      }
     },
     "heritage_continuation": {
       "type": "custom-image-banner",
@@ -31,8 +31,8 @@
         "container": "fullwidth",
         "custom_image_banner_title": "Heritage of Style"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "heritage_continuation_block": {
           "type": "smallImg",
           "settings": {
             "enable_item_1": true,
@@ -45,7 +45,7 @@
             "item_spacing_1": 0
           }
         }
-      ]
+      }
     },
     "necklaces_section": {
       "type": "product-category-filter",
@@ -54,8 +54,8 @@
         "show_navigation_arrows": true,
         "container": "default"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "category_bracelets": {
           "type": "category",
           "settings": {
             "category_name": "BRACELETS",
@@ -63,7 +63,7 @@
             "is_active": false
           }
         },
-        {
+        "category_earrings": {
           "type": "category",
           "settings": {
             "category_name": "EARRINGS",
@@ -71,7 +71,7 @@
             "is_active": false
           }
         },
-        {
+        "category_rings": {
           "type": "category",
           "settings": {
             "category_name": "RINGS",
@@ -79,7 +79,7 @@
             "is_active": false
           }
         },
-        {
+        "category_brooches": {
           "type": "category",
           "settings": {
             "category_name": "BROOCHES",
@@ -87,7 +87,7 @@
             "is_active": false
           }
         },
-        {
+        "category_necklaces": {
           "type": "category",
           "settings": {
             "category_name": "NECKLACES",
@@ -95,7 +95,7 @@
             "is_active": true
           }
         },
-        {
+        "product_star_pendant": {
           "type": "product",
           "settings": {
             "product_image": "",
@@ -104,7 +104,7 @@
             "product_category": "necklaces"
           }
         },
-        {
+        "product_gold_chain": {
           "type": "product",
           "settings": {
             "product_image": "",
@@ -113,7 +113,7 @@
             "product_category": "necklaces"
           }
         },
-        {
+        "product_gemstone": {
           "type": "product",
           "settings": {
             "product_image": "",
@@ -122,7 +122,7 @@
             "product_category": "necklaces"
           }
         }
-      ]
+      }
     },
     "zodiac_section": {
       "type": "spotlight-block",
@@ -130,13 +130,13 @@
         "spotlight_block_title": "Zodiac",
         "title_align": "center",
         "container": "default",
-        "column": 2,
+        "column": "2",
         "column_mb": "1",
         "item_distance": 0,
         "block_layout": "grid"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "zodiac_left": {
           "type": "image",
           "settings": {
             "enable_image": true,
@@ -150,7 +150,7 @@
             "align_items": "center"
           }
         },
-        {
+        "zodiac_right": {
           "type": "image",
           "settings": {
             "enable_image": true,
@@ -164,7 +164,7 @@
             "align_items": "center"
           }
         }
-      ]
+      }
     },
     "lifestyle_section": {
       "type": "custom-image-banner",
@@ -172,8 +172,8 @@
         "container": "default",
         "item_distance": 0
       },
-      "blocks": [
-        {
+      "blocks": {
+        "lifestyle_grid": {
           "type": "smallImg",
           "settings": {
             "enable_item_1": true,
@@ -195,7 +195,7 @@
             "item_spacing_4": 0
           }
         }
-      ]
+      }
     },
     "very_verdura_section": {
       "type": "spotlight-block",
@@ -203,13 +203,13 @@
         "spotlight_block_title": "Very Verdura",
         "title_align": "center",
         "container": "default",
-        "column": 2,
+        "column": "2",
         "column_mb": "1",
         "item_distance": 0,
         "block_layout": "grid"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "very_verdura_left": {
           "type": "image",
           "settings": {
             "enable_image": true,
@@ -223,7 +223,7 @@
             "align_items": "center"
           }
         },
-        {
+        "very_verdura_right": {
           "type": "image",
           "settings": {
             "enable_image": true,
@@ -237,7 +237,7 @@
             "align_items": "center"
           }
         }
-      ]
+      }
     },
     "visit_section": {
       "type": "spotlight-block",
@@ -245,13 +245,13 @@
         "spotlight_block_title": "Visit",
         "title_align": "left",
         "container": "default",
-        "column": 2,
+        "column": "2",
         "column_mb": "1",
         "item_distance": 0,
         "block_layout": "grid"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "visit_text": {
           "type": "image",
           "settings": {
             "enable_image": false,
@@ -263,7 +263,7 @@
             "align_items": "flex-start"
           }
         },
-        {
+        "visit_image": {
           "type": "image",
           "settings": {
             "enable_image": true,
@@ -276,7 +276,7 @@
             "align_items": "center"
           }
         }
-      ]
+      }
     },
     "new_arrivals_section": {
       "type": "product-block",
@@ -288,7 +288,7 @@
         "product_block_layout": "grid",
         "product_block_swipe_on_mobile": true,
         "container": "default",
-        "column": 3,
+        "column": "3",
         "column_mb": "1",
         "grid_gap": 30,
         "item_distance": 30
@@ -300,13 +300,13 @@
         "spotlight_block_title": "Heritage",
         "title_align": "left",
         "container": "default",
-        "column": 2,
+        "column": "2",
         "column_mb": "1",
         "item_distance": 0,
         "block_layout": "grid"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "heritage_image": {
           "type": "image",
           "settings": {
             "enable_image": true,
@@ -319,7 +319,7 @@
             "align_items": "center"
           }
         },
-        {
+        "heritage_text": {
           "type": "image",
           "settings": {
             "enable_image": false,
@@ -331,7 +331,7 @@
             "align_items": "flex-start"
           }
         }
-      ]
+      }
     },
     "newsletter_section": {
       "type": "newsletter",
@@ -341,8 +341,8 @@
         "justify_section_content": "center",
         "section_item_distance": 0
       },
-      "blocks": [
-        {
+      "blocks": {
+        "newsletter_form": {
           "type": "newsletter",
           "settings": {
             "section_title": "Sign up now",
@@ -359,7 +359,7 @@
             "form_gap": 20
           }
         }
-      ]
+      }
     }
   },
   "order": [
