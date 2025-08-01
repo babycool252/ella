@@ -134,19 +134,22 @@
       "type": "spotlight-block",
       "settings": {
         "spotlight_block_title": "Zodiac",
+        "spotlight_block_des": "DISCOVER YOUR SIGN",
         "title_align": "center",
         "container": "default",
         "column": "2",
         "column_mb": "1",
         "item_distance": 0,
         "block_layout": "grid",
-        "spotlight_block_bg": "#fef7f7"
+        "spotlight_block_bg": "#fef7f7",
+        "margin_bottom_title": 20,
+        "margin_bottom_des": 40
       },
       "blocks": {
         "zodiac_left": {
           "type": "image",
           "settings": {
-            "enable_image": true,
+            "enable_image": false,
             "image": "",
             "link": "",
             "title": "Zodiac",
@@ -162,13 +165,16 @@
             "bg_color_button": "#333333",
             "fontsize_title": 36,
             "fontsize_sub_title": 14,
-            "fontsize_des": 16
+            "fontsize_des": 16,
+            "mg_top_des": 20,
+            "mg_top_btn": 30,
+            "button_width": 200
           }
         },
         "zodiac_right": {
           "type": "image",
           "settings": {
-            "enable_image": true,
+            "enable_image": false,
             "image": "",
             "link": "",
             "title": "Zodiac",
@@ -184,7 +190,10 @@
             "bg_color_button": "#333333",
             "fontsize_title": 36,
             "fontsize_sub_title": 14,
-            "fontsize_des": 16
+            "fontsize_des": 16,
+            "mg_top_des": 20,
+            "mg_top_btn": 30,
+            "button_width": 200
           }
         }
       }
@@ -225,19 +234,22 @@
       "type": "spotlight-block",
       "settings": {
         "spotlight_block_title": "Very Verdura",
+        "spotlight_block_des": "GIFTS FOR EVERY OCCASION",
         "title_align": "center",
         "container": "default",
         "column": "2",
         "column_mb": "1",
         "item_distance": 0,
         "block_layout": "grid",
-        "spotlight_block_bg": "#ffffff"
+        "spotlight_block_bg": "#ffffff",
+        "margin_bottom_title": 20,
+        "margin_bottom_des": 40
       },
       "blocks": {
         "very_verdura_left": {
           "type": "image",
           "settings": {
-            "enable_image": true,
+            "enable_image": false,
             "image": "",
             "link": "",
             "title": "Very Verdura",
@@ -253,13 +265,16 @@
             "bg_color_button": "#333333",
             "fontsize_title": 36,
             "fontsize_sub_title": 14,
-            "fontsize_des": 16
+            "fontsize_des": 16,
+            "mg_top_des": 20,
+            "mg_top_btn": 30,
+            "button_width": 200
           }
         },
         "very_verdura_right": {
           "type": "image",
           "settings": {
-            "enable_image": true,
+            "enable_image": false,
             "image": "",
             "link": "",
             "title": "Very Verdura",
@@ -275,7 +290,10 @@
             "bg_color_button": "#333333",
             "fontsize_title": 36,
             "fontsize_sub_title": 14,
-            "fontsize_des": 16
+            "fontsize_des": 16,
+            "mg_top_des": 20,
+            "mg_top_btn": 30,
+            "button_width": 200
           }
         }
       }
