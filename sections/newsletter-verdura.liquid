@@ -1,0 +1,198 @@
+<link rel="stylesheet" href="{{ 'component-newsletter-verdura.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-newsletter-verdura.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="newsletter-verdura section-block-{{section.id}}">
+  <div class="newsletter-container">
+    <!-- 左侧标题区域 -->
+    <div class="newsletter-left">
+      <h2 class="newsletter-title">
+        <span class="title-line-1">Sign up</span>
+        <span class="title-line-2">now</span>
+      </h2>
+      
+      <!-- 装饰性弧线 -->
+      <div class="decorative-lines">
+        <div class="arc-line top-arc"></div>
+        <div class="arc-line bottom-arc"></div>
+      </div>
+    </div>
+    
+    <!-- 右侧圆形表单区域 -->
+    <div class="newsletter-right">
+      <div class="newsletter-form-circle">
+        <div class="form-content">
+          <h3 class="form-title">{{ section.settings.form_title | default: 'WELCOME TO VERDURA' }}</h3>
+          <p class="form-description">{{ section.settings.form_description | default: 'Please join our email list for updates about new collections and special events' }}</p>
+          
+          <form class="newsletter-form" action="{{ section.settings.form_action | default: '/contact#contact_form' }}" method="post">
+            <input type="hidden" name="form_type" value="customer">
+            <input type="hidden" name="utf8" value="✓">
+            
+            <div class="form-field">
+              <input type="email" 
+                     name="contact[email]" 
+                     id="newsletter-email-{{section.id}}" 
+                     class="newsletter-input" 
+                     placeholder="{{ section.settings.input_placeholder | default: 'Enter Email Address Here' }}"
+                     required>
+            </div>
+            
+            <button type="submit" class="newsletter-submit">
+              {{ section.settings.button_text | default: 'Subscribe' }}
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 侧边图标 -->
+  <div class="side-icons">
+    <div class="icon-item gift-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 12V22H4V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 7H22V12H2V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 22V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="icon-item grid-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="icon-item ca-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+        <text x="12" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="currentColor">CA</text>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<style>
+  .newsletter-verdura.section-block-{{section.id}} {
+    margin-top: {{ section.settings.mg_top_desktop }}px;
+    margin-bottom: {{ section.settings.mg_bottom_desktop }}px;
+  }
+
+  @media (max-width: 1199px) {
+    .newsletter-verdura.section-block-{{section.id}} {
+      margin-top: {{ section.settings.mg_top_tablet }}px;
+      margin-bottom: {{ section.settings.mg_bottom_tablet }}px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .newsletter-verdura.section-block-{{section.id}} {
+      margin-top: {{ section.settings.mg_top_mobile }}px;
+      margin-bottom: {{ section.settings.mg_bottom_mobile }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Newsletter Verdura",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "form_title",
+      "label": "Form Title",
+      "default": "WELCOME TO VERDURA"
+    },
+    {
+      "type": "textarea",
+      "id": "form_description",
+      "label": "Form Description",
+      "default": "Please join our email list for updates about new collections and special events"
+    },
+    {
+      "type": "text",
+      "id": "input_placeholder",
+      "label": "Input Placeholder",
+      "default": "Enter Email Address Here"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Subscribe"
+    },
+    {
+      "type": "url",
+      "id": "form_action",
+      "label": "Form Action URL"
+    },
+    {
+      "type": "header",
+      "content": "Spacing Settings"
+    },
+    {
+      "type": "range",
+      "id": "mg_top_desktop",
+      "label": "Desktop Top Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "mg_bottom_desktop",
+      "label": "Desktop Bottom Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "mg_top_tablet",
+      "label": "Tablet Top Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "mg_bottom_tablet",
+      "label": "Tablet Bottom Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "mg_top_mobile",
+      "label": "Mobile Top Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mg_bottom_mobile",
+      "label": "Mobile Bottom Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter Verdura"
+    }
+  ]
+}
+{% endschema %} 

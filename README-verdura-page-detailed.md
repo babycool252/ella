@@ -96,11 +96,17 @@
 
 ### 10. **Newsletter Section** - 邮件订阅
 - **背景**: 白色
-- **布局**: 左右两列
-- **左侧文字**:
-  - 标题: "Sign up now" (48px)
-  - 副标题: "RECEIVE EXCLUSIVE UPDATES,<br>NEW ARRIVALS & MORE."
-- **右侧**: 圆形邮件订阅表单
+- **布局**: 左右分栏布局
+- **左侧区域**:
+  - 大标题: "Sign up" 和 "now" (72px, 粗体)
+  - 装饰性弧线: 左上角和左下角的浅灰色弧线
+- **右侧区域**:
+  - 圆形表单: 浅粉色圆形背景 (#f8e6e6)
+  - 标题: "WELCOME TO VERDURA" (18px, 大写)
+  - 描述: "Please join our email list for updates about new collections and special events"
+  - 输入框: "Enter Email Address Here" 占位符
+  - 按钮: "Subscribe"
+- **侧边图标**: 右侧三个粉色圆形图标 (礼品盒、网格、CA)
 
 ## 🎨 样式规范
 
@@ -221,8 +227,11 @@
 
 #### **Newsletter Section**
 1. 点击 "Newsletter Section"
-2. 确认邮件订阅表单设置
-3. 检查背景颜色为白色
+2. 确认表单标题为 "WELCOME TO VERDURA"
+3. 确认描述文字为 "Please join our email list for updates about new collections and special events"
+4. 确认输入框占位符为 "Enter Email Address Here"
+5. 确认按钮文字为 "Subscribe"
+6. 检查布局为左右分栏，左侧大标题，右侧圆形表单
 
 ## 🐛 故障排除
 
@@ -259,10 +268,11 @@
 ## 📄 技术实现
 
 ### 使用的 Sections
-- `custom-image-banner`: 4 个区块 (Hero, Lifestyle, Instagram, Newsletter)
+- `custom-image-banner`: 3 个区块 (Hero, Lifestyle, Instagram)
 - `spotlight-block`: 4 个区块 (Zodiac, Very Verdura, Visit, Heritage)
 - `product-block`: 1 个区块 (New Arrivals)
 - `product-category-filter`: 1 个自定义区块 (Necklaces)
+- `newsletter-verdura`: 1 个自定义区块 (Newsletter)
 
 ### 自定义功能
 - 产品分类筛选系统

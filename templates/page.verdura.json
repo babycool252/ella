@@ -1011,39 +1011,13 @@
       }
     },
     "newsletter_section": {
-      "type": "newsletter",
-      "blocks": {
-        "newsletter_form": {
-          "type": "newsletter",
-          "settings": {
-            "section_title": "Sign up now",
-            "section_subtitle": "RECEIVE EXCLUSIVE UPDATES,<br>NEW ARRIVALS & MORE.",
-            "input_placeholder": "EMAIL ADDRESS",
-            "button_text": "SUBMIT",
-            "section_title_font_size": 48,
-            "section_title_font_size_mb": 32,
-            "section_subtitle_font_size": 16,
-            "section_subtitle_font_size_mb": 14,
-            "button_font_size": 14,
-            "button_width": 120,
-            "show_between_input_button": false,
-            "form_gap": 20
-          }
-        }
-      },
-      "block_order": [
-        "newsletter_form"
-      ],
+      "type": "newsletter-verdura",
       "settings": {
-        "container": "default",
-        "padding_full_width": 0,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "enable_parallax": true,
-        "section_text_align": "center",
-        "justify_section_content": "center",
-        "section_item_distance": 0,
-        "enable_social_media_below": false,
+        "form_title": "WELCOME TO VERDURA",
+        "form_description": "Please join our email list for updates about new collections and special events",
+        "input_placeholder": "Enter Email Address Here",
+        "button_text": "Subscribe",
+        "form_action": "",
         "mg_top_desktop": 80,
         "mg_top_tablet": 60,
         "mg_top_mobile": 40,
