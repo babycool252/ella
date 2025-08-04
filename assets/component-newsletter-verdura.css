@@ -212,7 +212,7 @@
 /* 响应式设计 */
 @media (max-width: 1199px) {
   .newsletter-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 40px;
   }
   
@@ -226,7 +226,7 @@
   
   .newsletter-title {
     font-size: 60px;
-    text-align: center;
+    text-align: left;
   }
   
   .newsletter-form-circle {
@@ -246,6 +246,7 @@
 @media (max-width: 767px) {
   .newsletter-container {
     padding: 20px;
+    flex-direction: row;
   }
   
   .newsletter-left {
@@ -258,6 +259,7 @@
   
   .newsletter-title {
     font-size: 48px;
+    text-align: left;
   }
   
   .newsletter-form-circle {

@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "new_arrivals": {
+      "type": "new-arrivals-jewelry",
+      "settings": {
+        "title": "New Arrivals",
+        "subtitle": "Discover our latest jewelry collection",
+        "collection": "new-arrivals",
+        "product_limit": 6,
+        "show_arrows": true,
+        "show_dots": true,
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#333333",
+        "accent_color": "#d4af37",
+        "mg_top_desktop": 80,
+        "mg_bottom_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_bottom_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "new_arrivals"
+  ]
+} 
