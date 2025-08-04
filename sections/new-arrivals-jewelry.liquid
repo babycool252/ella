@@ -76,41 +76,12 @@
                   {%- if product.compare_at_price > product.price -%}
                     <div class="product-badge sale-badge">Sale</div>
                   {%- endif -%}
-                </div>
-
-                <!-- 产品信息 -->
-                <div class="product-info">
-                  <h3 class="product-title">
-                    <a href="{{ product.url }}">{{ product.title }}</a>
-                  </h3>
                   
-                  <div class="product-price">
-                    {%- if product.compare_at_price > product.price -%}
-                      <span class="price-sale">{{ product.price | money }}</span>
-                      <span class="price-compare">{{ product.compare_at_price | money }}</span>
-                    {%- else -%}
-                      <span class="price-regular">{{ product.price | money }}</span>
-                    {%- endif -%}
-                  </div>
-                  
-                  <!-- 快速操作按钮 -->
-                  <div class="product-actions">
-                    <button class="quick-view-btn" 
-                            data-product-id="{{ product.id }}"
-                            aria-label="Quick view {{ product.title }}">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </button>
-                    
-                    <button class="add-to-wishlist-btn" 
-                            data-product-id="{{ product.id }}"
-                            aria-label="Add {{ product.title }} to wishlist">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </button>
+                  <!-- 悬停显示的产品标题 -->
+                  <div class="product-title-overlay">
+                    <h3 class="product-title">
+                      <a href="{{ product.url }}">{{ product.title }}</a>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -128,11 +99,12 @@
                       <path d="M100 80C88.9543 80 80 88.9543 80 100C80 111.046 88.9543 120 100 120C111.046 120 120 111.046 120 100C120 88.9543 111.046 80 100 80ZM100 110C94.4772 110 90 105.523 90 100C90 94.4772 94.4772 90 100 90C105.523 90 110 94.4772 110 100C110 105.523 105.523 110 100 110Z" fill="#ddd"/>
                     </svg>
                   </div>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-title">Sample Jewelry Item {{ i }}</h3>
-                  <div class="product-price">
-                    <span class="price-regular">$299.00</span>
+                  
+                  <!-- 悬停显示的产品标题 -->
+                  <div class="product-title-overlay">
+                    <h3 class="product-title">
+                      <a href="#">Sample Jewelry Item {{ i }}</a>
+                    </h3>
                   </div>
                 </div>
               </div>
