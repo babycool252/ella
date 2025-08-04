@@ -1,344 +1,316 @@
 <link rel="stylesheet" href="{{ 'component-product-category-filter.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-product-category-filter.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="product-category-filter section-block-{{section.id}}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="{% if section.settings.container == 'fullwidth' %}container-full{% elsif section.settings.container == '1770' %}container-1770{% elsif section.settings.container == '1170' %}container-1170{% else %}container{% endif %}">
-        <div class="category-filter-wrapper">
-            <!-- 左侧筛选菜单 -->
-            <div class="filter-sidebar">
-                <div class="filter-header">
-                    <h3 class="filter-title">{{ section.settings.filter_title | default: 'Categories' }}</h3>
-                </div>
-                <div class="filter-categories">
-                    {%- for block in section.blocks -%}
-                        {%- if block.type == 'category' -%}
-                            <div class="filter-category-item{% if block.settings.is_active %} active{% endif %}" data-category="{{ block.settings.category_handle }}">
-                                <a href="{{ block.settings.category_link }}" class="category-link">
-                                    {{ block.settings.category_name }}
-                                </a>
-                            </div>
-                        {%- endif -%}
-                    {%- endfor -%}
-                </div>
-                {%- if section.settings.show_navigation_arrows -%}
-                    <div class="filter-navigation">
-                        <button class="nav-arrow prev-arrow" aria-label="Previous">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M10 12L6 8L10 4"/>
-                            </svg>
-                        </button>
-                    </div>
-                {%- endif -%}
+<div class="product-category-filter section-block-{{section.id}}">
+  <div class="category-filter-wrapper">
+    <!-- 左侧筛选菜单 -->
+    <div class="filter-sidebar">
+      <div class="filter-header">
+        <h3 class="filter-title">{{ section.settings.filter_title | default: 'Categories' }}</h3>
+      </div>
+      <div class="filter-categories">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'category' -%}
+            <div class="filter-category-item{% if block.settings.is_active %} active{% endif %}" data-category="{{ block.settings.category_handle }}">
+              <a href="{{ block.settings.category_link }}" class="category-link">
+                {{ block.settings.category_name }}
+              </a>
             </div>
-
-            <!-- 右侧产品展示区域 -->
-            <div class="product-display">
-                <div class="product-grid">
-                    {%- for block in section.blocks -%}
-                        {%- if block.type == 'product' -%}
-                            <div class="product-item" data-category="{{ block.settings.product_category }}">
-                                <div class="product-image">
-                                    {%- if block.settings.product_image != blank -%}
-                                        <img src="{{ block.settings.product_image | img_url: '400x400', crop: 'center' }}" 
-                                             alt="{{ block.settings.product_title }}"
-                                             loading="lazy"
-                                             width="400" 
-                                             height="400">
-                                    {%- else -%}
-                                        <div class="placeholder-image">
-                                            {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                                        </div>
-                                    {%- endif -%}
-                                </div>
-                                <div class="product-info">
-                                    <h4 class="product-title">{{ block.settings.product_title }}</h4>
-                                    {%- if block.settings.product_price != blank -%}
-                                        <p class="product-price">{{ block.settings.product_price }}</p>
-                                    {%- endif -%}
-                                </div>
-                            </div>
-                        {%- endif -%}
-                    {%- endfor -%}
-                </div>
-                {%- if section.settings.show_navigation_arrows -%}
-                    <div class="product-navigation">
-                        <button class="nav-arrow next-arrow" aria-label="Next">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M6 4L10 8L6 12"/>
-                            </svg>
-                        </button>
-                    </div>
-                {%- endif -%}
-            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      {%- if section.settings.show_navigation_arrows -%}
+        <div class="filter-navigation">
+          <button class="nav-arrow prev-arrow" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
         </div>
+      {%- endif -%}
     </div>
+
+    <!-- 右侧产品展示区域 -->
+    <div class="product-display">
+      <div class="product-grid">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'product' -%}
+            <div class="product-item" data-category="{{ block.settings.product_category }}">
+              <div class="product-image">
+                {%- if block.settings.product_image != blank -%}
+                  <img src="{{ block.settings.product_image | img_url: '400x400', crop: 'center' }}" 
+                       alt="{{ block.settings.product_title }}" 
+                       loading="lazy" 
+                       width="400" 
+                       height="400">
+                {%- else -%}
+                  <div class="placeholder-image">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="100" height="100" fill="#f5f5f5"/>
+                      <path d="M30 40L50 60L70 40" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                {%- endif -%}
+              </div>
+              <div class="product-info">
+                <h4 class="product-title">{{ block.settings.product_title }}</h4>
+                {%- if block.settings.product_price != blank -%}
+                  <p class="product-price">{{ block.settings.product_price }}</p>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      {%- if section.settings.show_navigation_arrows -%}
+        <div class="product-navigation">
+          <button class="nav-arrow next-arrow" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
 </div>
 
 <style>
-    {%- liquid
-        assign mg_top_desktop = section.settings.mg_top_desktop
-        assign mg_top_tablet = section.settings.mg_top_tablet
-        assign mg_top_mobile = section.settings.mg_top_mobile
-        assign mg_bottom_desktop = section.settings.mg_bottom_desktop
-        assign mg_bottom_tablet = section.settings.mg_bottom_tablet
-        assign mg_bottom_mobile = section.settings.mg_bottom_mobile
-        assign padding_full_width = section.settings.padding_full_width
-    -%}
+  .product-category-filter.section-block-{{section.id}} {
+    margin-top: {{ section.settings.mg_top_desktop }}px;
+    margin-bottom: {{ section.settings.mg_bottom_desktop }}px;
+  }
 
-    @media (min-width: 1200px) {
-        .section-block-{{section.id}} {
-            padding-top: {{ mg_top_desktop | append: 'px' }};
-            padding-bottom: {{ mg_bottom_desktop | append: 'px' }};
-        }
+  @media (max-width: 1199px) {
+    .product-category-filter.section-block-{{section.id}} {
+      margin-top: {{ section.settings.mg_top_tablet }}px;
+      margin-bottom: {{ section.settings.mg_bottom_tablet }}px;
     }
+  }
 
-    @media (min-width: 1025px) {
-        {% if section.settings.container == 'fullwidth' %}
-            .section-block-{{section.id}} .container-full {
-                padding-left: {{ padding_full_width | append: 'px' }};
-                padding-right: {{ padding_full_width | append: 'px' }};
-            }
-        {% endif %}
+  @media (max-width: 767px) {
+    .product-category-filter.section-block-{{section.id}} {
+      margin-top: {{ section.settings.mg_top_mobile }}px;
+      margin-bottom: {{ section.settings.mg_bottom_mobile }}px;
     }
+  }
 
-    @media (min-width: 768px) and (max-width: 1199px) {
-        .section-block-{{section.id}} {
-            padding-top: {{ mg_top_tablet | append: 'px' }};
-            padding-bottom: {{ mg_bottom_tablet | append: 'px' }};
-        }
+  {%- if section.settings.container == 'fullwidth' -%}
+    .product-category-filter.section-block-{{section.id}} .category-filter-wrapper {
+      padding-left: {{ section.settings.padding_full_width }}px;
+      padding-right: {{ section.settings.padding_full_width }}px;
     }
-
-    @media (max-width: 767px) {
-        .section-block-{{section.id}} {
-            padding-top: {{ mg_top_mobile | append: 'px' }};
-            padding-bottom: {{ mg_bottom_mobile | append: 'px' }};
-        }
-    }
+  {%- endif -%}
 </style>
 
 {% schema %}
 {
-    "name": "Product Category Filter",
-    "tag": "section",
-    "class": "section",
-    "settings": [
+  "name": "Product Category Filter",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "filter_title",
+      "label": "Filter Title",
+      "default": "Categories"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation_arrows",
+      "label": "Show Navigation Arrows",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "label": "Container Width",
+      "options": [
         {
-            "type": "text",
-            "id": "filter_title",
-            "label": "Filter Title",
-            "default": "Categories"
+          "value": "default",
+          "label": "Default"
         },
         {
-            "type": "checkbox",
-            "id": "show_navigation_arrows",
-            "label": "Show Navigation Arrows",
-            "default": true
-        },
-        {
-            "type": "select",
-            "id": "container",
-            "label": "Container Width",
-            "options": [
-                {
-                    "value": "default",
-                    "label": "Default"
-                },
-                {
-                    "value": "1170",
-                    "label": "1170px"
-                },
-                {
-                    "value": "1770",
-                    "label": "1770px"
-                },
-                {
-                    "value": "fullwidth",
-                    "label": "Full Width"
-                }
-            ],
-            "default": "default"
-        },
-        {
-            "type": "header",
-            "content": "Spacing Settings"
-        },
-        {
-            "type": "range",
-            "id": "mg_top_desktop",
-            "label": "Desktop Top Margin",
-            "min": 0,
-            "max": 100,
-            "step": 5,
-            "unit": "px",
-            "default": 50
-        },
-        {
-            "type": "range",
-            "id": "mg_bottom_desktop",
-            "label": "Desktop Bottom Margin",
-            "min": 0,
-            "max": 100,
-            "step": 5,
-            "unit": "px",
-            "default": 50
-        },
-        {
-            "type": "range",
-            "id": "mg_top_tablet",
-            "label": "Tablet Top Margin",
-            "min": 0,
-            "max": 100,
-            "step": 5,
-            "unit": "px",
-            "default": 40
-        },
-        {
-            "type": "range",
-            "id": "mg_bottom_tablet",
-            "label": "Tablet Bottom Margin",
-            "min": 0,
-            "max": 100,
-            "step": 5,
-            "unit": "px",
-            "default": 40
-        },
-        {
-            "type": "range",
-            "id": "mg_top_mobile",
-            "label": "Mobile Top Margin",
-            "min": 0,
-            "max": 100,
-            "step": 5,
-            "unit": "px",
-            "default": 30
-        },
-        {
-            "type": "range",
-            "id": "mg_bottom_mobile",
-            "label": "Mobile Bottom Margin",
-            "min": 0,
-            "max": 100,
-            "step": 5,
-            "unit": "px",
-            "default": 30
-        },
-        {
-            "type": "range",
-            "id": "padding_full_width",
-            "label": "Full Width Padding",
-            "min": 0,
-            "max": 100,
-            "step": 5,
-            "unit": "px",
-            "default": 15
+          "value": "fullwidth",
+          "label": "Full Width"
         }
-    ],
-    "blocks": [
+      ],
+      "default": "default"
+    },
+    {
+      "type": "header",
+      "content": "Spacing Settings"
+    },
+    {
+      "type": "range",
+      "id": "mg_top_desktop",
+      "label": "Desktop Top Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "mg_bottom_desktop",
+      "label": "Desktop Bottom Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "mg_top_tablet",
+      "label": "Tablet Top Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "mg_bottom_tablet",
+      "label": "Tablet Bottom Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "mg_top_mobile",
+      "label": "Mobile Top Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mg_bottom_mobile",
+      "label": "Mobile Bottom Margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_full_width",
+      "label": "Full Width Padding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "default": 15
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
         {
-            "type": "category",
-            "name": "Category",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "category_name",
-                    "label": "Category Name",
-                    "default": "BRACELETS"
-                },
-                {
-                    "type": "text",
-                    "id": "category_handle",
-                    "label": "Category Handle",
-                    "default": "bracelets"
-                },
-                {
-                    "type": "url",
-                    "id": "category_link",
-                    "label": "Category Link"
-                },
-                {
-                    "type": "checkbox",
-                    "id": "is_active",
-                    "label": "Is Active Category",
-                    "default": false
-                }
-            ]
+          "type": "text",
+          "id": "category_name",
+          "label": "Category Name",
+          "default": "BRACELETS"
         },
         {
-            "type": "product",
-            "name": "Product",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "product_image",
-                    "label": "Product Image"
-                },
-                {
-                    "type": "text",
-                    "id": "product_title",
-                    "label": "Product Title",
-                    "default": "Product Name"
-                },
-                {
-                    "type": "text",
-                    "id": "product_price",
-                    "label": "Product Price",
-                    "default": "$1,000"
-                },
-                {
-                    "type": "text",
-                    "id": "product_category",
-                    "label": "Product Category",
-                    "default": "necklaces"
-                }
-            ]
-        }
-    ],
-    "presets": [
+          "type": "text",
+          "id": "category_handle",
+          "label": "Category Handle",
+          "default": "bracelets"
+        },
         {
-            "name": "Product Category Filter",
-            "blocks": [
-                {
-                    "type": "category",
-                    "settings": {
-                        "category_name": "BRACELETS",
-                        "category_handle": "bracelets",
-                        "is_active": false
-                    }
-                },
-                {
-                    "type": "category",
-                    "settings": {
-                        "category_name": "EARRINGS",
-                        "category_handle": "earrings",
-                        "is_active": false
-                    }
-                },
-                {
-                    "type": "category",
-                    "settings": {
-                        "category_name": "RINGS",
-                        "category_handle": "rings",
-                        "is_active": false
-                    }
-                },
-                {
-                    "type": "category",
-                    "settings": {
-                        "category_name": "BROOCHES",
-                        "category_handle": "brooches",
-                        "is_active": false
-                    }
-                },
-                {
-                    "type": "category",
-                    "settings": {
-                        "category_name": "NECKLACES",
-                        "category_handle": "necklaces",
-                        "is_active": true
-                    }
-                }
-            ]
+          "type": "url",
+          "id": "category_link",
+          "label": "Category Link"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_active",
+          "label": "Is Active Category",
+          "default": false
         }
-    ]
+      ]
+    },
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        },
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "Product Title",
+          "default": "Product Name"
+        },
+        {
+          "type": "text",
+          "id": "product_price",
+          "label": "Product Price",
+          "default": "$1,000"
+        },
+        {
+          "type": "text",
+          "id": "product_category",
+          "label": "Product Category",
+          "default": "necklaces"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Category Filter",
+      "blocks": [
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "BRACELETS",
+            "category_handle": "bracelets",
+            "is_active": false
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "EARRINGS",
+            "category_handle": "earrings",
+            "is_active": false
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "RINGS",
+            "category_handle": "rings",
+            "is_active": false
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "BROOCHES",
+            "category_handle": "brooches",
+            "is_active": false
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "category_name": "NECKLACES",
+            "category_handle": "necklaces",
+            "is_active": true
+          }
+        }
+      ]
+    }
+  ]
 }
 {% endschema %} 

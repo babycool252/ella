@@ -1,36 +1,28 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+
 {
   "sections": {
     "hero_banner": {
       "type": "custom-image-banner",
       "blocks": {
-        "large_img_3KgMpr": {
+        "hero_main": {
           "type": "largeImg",
           "settings": {
-            "item_width": "50%",
+            "item_width": "100%",
             "item_border_radius": 0,
             "item_spacing": 0,
             "title_align": "left",
-            "align_items": "bottom",
-            "align_items_spacing": 30,
-            "align_items_spacing_lr": 45,
-            "sub_title": "",
+            "align_items": "center",
+            "align_items_spacing": 0,
+            "align_items_spacing_lr": 0,
+            "sub_title": "DISCOVER THE COLLECTION",
             "border_sub_title": false,
             "color_sub_title": "#ffffff",
-            "fontsize_sub_title": 18,
-            "mg_bottom_sub_title": 10,
-            "title": "Lorem De Dorus",
+            "fontsize_sub_title": 14,
+            "mg_bottom_sub_title": 20,
+            "title": "Heritage of Style",
             "color_title": "#ffffff",
-            "fontsize_title": 24,
-            "fontsize_title_mb": 20,
+            "fontsize_title": 48,
+            "fontsize_title_mb": 32,
             "mg_bottom_title": 10,
             "mg_bottom_title_mb": 5,
             "enable_style_italic": false,
@@ -41,7 +33,7 @@
             "fontsize_des": 16,
             "mg_bottom_des": 20,
             "mg_bottom_des_mb": 20,
-            "button": "Shop Now",
+            "button": "",
             "link": "",
             "fontsize_btn": 16,
             "button_width": 190,
@@ -61,80 +53,37 @@
         }
       },
       "block_order": [
-        "large_img_3KgMpr"
+        "hero_main"
       ],
       "settings": {
         "container": "fullwidth",
         "padding_full_width": 0,
         "custom_image_banner_block_swipe_on_mobile": "list",
-        "item_distance": 15,
-        "custom_image_banner_bg": "#ffffff",
+        "item_distance": 0,
+        "custom_image_banner_bg": "#000000",
         "custom_image_banner_bg_gradient": "",
         "title_align": "left",
-        "custom_image_banner_title": "Heritage of Style",
-        "enable_border_title": true,
-        "color_title": "#232323",
+        "custom_image_banner_title": "",
+        "enable_border_title": false,
+        "color_title": "#ffffff",
         "fontsize_title": 16,
         "fontsize_title_mb": 16,
-        "margin_bottom_title": 45,
-        "custom_image_banner_des": "DISCOVER THE COLLECTION",
-        "color_des": "#3c3c3c",
-        "fontsize_des": 16,
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
-      }
-    },
-    "heritage_continuation": {
-      "type": "custom-image-banner",
-      "settings": {
-        "container": "fullwidth",
-        "padding_full_width": 0,
-        "custom_image_banner_block_swipe_on_mobile": "list",
-        "item_distance": 15,
-        "custom_image_banner_bg": "#ffffff",
-        "custom_image_banner_bg_gradient": "",
-        "title_align": "center",
-        "custom_image_banner_title": "Heritage of Style",
-        "enable_border_title": true,
-        "color_title": "#232323",
-        "fontsize_title": 16,
-        "fontsize_title_mb": 16,
-        "margin_bottom_title": 45,
+        "margin_bottom_title": 0,
         "custom_image_banner_des": "",
-        "color_des": "#3c3c3c",
+        "color_des": "#ffffff",
         "fontsize_des": 16,
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
       }
     },
     "necklaces_section": {
       "type": "product-category-filter",
       "blocks": {
-        "product_ngKygT": {
-          "type": "product",
-          "settings": {
-            "product_title": "Product Name",
-            "product_price": "$1,000",
-            "product_category": "necklaces"
-          }
-        },
-        "product_jXHwPL": {
-          "type": "product",
-          "settings": {
-            "product_title": "Product Name",
-            "product_price": "$1,000",
-            "product_category": "necklaces"
-          }
-        },
-        "category_PHfdfp": {
+        "category_bracelets": {
           "type": "category",
           "settings": {
             "category_name": "BRACELETS",
@@ -143,114 +92,152 @@
             "is_active": false
           }
         },
-        "category_bH3L83": {
+        "category_earrings": {
           "type": "category",
           "settings": {
-            "category_name": "BRACELETS",
-            "category_handle": "bracelets",
+            "category_name": "EARRINGS",
+            "category_handle": "earrings",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_rings": {
+          "type": "category",
+          "settings": {
+            "category_name": "RINGS",
+            "category_handle": "rings",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_brooches": {
+          "type": "category",
+          "settings": {
+            "category_name": "BROOCHES",
+            "category_handle": "brooches",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_necklaces": {
+          "type": "category",
+          "settings": {
+            "category_name": "NECKLACES",
+            "category_handle": "necklaces",
             "category_link": "",
             "is_active": true
           }
         },
-        "category_wmFcGY": {
-          "type": "category",
+        "product_star_pendant": {
+          "type": "product",
           "settings": {
-            "category_name": "BRACELETS",
-            "category_handle": "bracelets",
-            "category_link": "",
-            "is_active": false
+            "product_image": "",
+            "product_title": "Star Pendant Necklace",
+            "product_price": "$2,500",
+            "product_category": "necklaces"
           }
         },
-        "category_HjAHG4": {
-          "type": "category",
+        "product_gold_chain": {
+          "type": "product",
           "settings": {
-            "category_name": "BRACELETS",
-            "category_handle": "bracelets",
-            "category_link": "",
-            "is_active": false
+            "product_image": "",
+            "product_title": "Classic Gold Chain",
+            "product_price": "$1,800",
+            "product_category": "necklaces"
+          }
+        },
+        "product_gemstone": {
+          "type": "product",
+          "settings": {
+            "product_image": "",
+            "product_title": "Gemstone Necklace with Blue and Green Stones",
+            "product_price": "$3,200",
+            "product_category": "necklaces"
           }
         }
       },
       "block_order": [
-        "product_ngKygT",
-        "product_jXHwPL",
-        "category_PHfdfp",
-        "category_bH3L83",
-        "category_wmFcGY",
-        "category_HjAHG4"
+        "category_bracelets",
+        "category_earrings",
+        "category_rings",
+        "category_brooches",
+        "category_necklaces",
+        "product_star_pendant",
+        "product_gold_chain",
+        "product_gemstone"
       ],
       "settings": {
         "filter_title": "Categories",
         "show_navigation_arrows": true,
         "container": "default",
-        "mg_top_desktop": 50,
-        "mg_bottom_desktop": 50,
-        "mg_top_tablet": 40,
-        "mg_bottom_tablet": 40,
-        "mg_top_mobile": 30,
-        "mg_bottom_mobile": 30,
+        "mg_top_desktop": 80,
+        "mg_bottom_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_bottom_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_mobile": 40,
         "padding_full_width": 15
       }
     },
     "zodiac_section": {
       "type": "spotlight-block",
       "blocks": {
-        "image_hmNDE4": {
+        "zodiac_left": {
           "type": "image",
           "settings": {
             "enable_image": true,
-            "title_align": "center",
-            "enable_absolute": false,
-            "align_items": "center",
-            "align_items_spacing_top_bottom_position": 0,
-            "align_items_spacing_top_bottom_position_mb": 0,
-            "bg_color_content": "",
-            "align_items_spacing_top": 10,
-            "align_items_spacing_bottom": 10,
-            "align_items_spacing_lr": 10,
-            "sub_title": "",
-            "border_sub_title": false,
-            "color_sub_title": "#232323",
-            "fontsize_sub_title": 20,
-            "font_weight_sub_title": "500",
-            "mg_bottom_sub_title": 10,
-            "title": "Lorem De Dorus",
-            "color_title": "#232323",
-            "fontsize_title": 20,
-            "fontsize_title_mb": 20,
-            "font_weight_title": "500",
-            "enable_style_italic": false,
-            "border_title": "border_hover",
-            "border_color_title": "",
-            "des": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue an melitos. Duis tristique del ante le maliquam. Praesent murna de tellus laoreet cosmopolis.",
-            "color_des": "#3c3c3c",
-            "fontsize_des": 12,
-            "mg_top_des": 8,
-            "enable_des_hover": false,
-            "button_style": "button_1",
-            "button": "Shop Now",
+            "image": "",
             "link": "",
-            "fontsize_btn": 16,
-            "button_width": 190,
-            "bg_opacity_button": 1,
-            "enable_button_custom_border": false,
-            "enable_button_hover": false,
-            "btn_text_transform": "uppercase",
-            "btn_icon": "",
-            "mg_top_btn": 30,
+            "title": "",
+            "sub_title": "",
+            "des": "",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        },
+        "zodiac_center": {
+          "type": "image",
+          "settings": {
+            "enable_image": false,
+            "image": "",
+            "link": "",
+            "title": "Zodiac",
+            "sub_title": "DISCOVER YOUR SIGN",
+            "des": "Each zodiac sign tells a unique story. Discover your personalized piece that reflects your celestial journey and individual character.",
+            "button": "SHOP THE COLLECTION",
+            "title_align": "center",
+            "align_items": "center",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
             "color_button": "#ffffff",
-            "border_color_button": "#232323",
-            "bg_color_button": "#232323",
-            "bg_color_button_gradient": "",
-            "color_button_hover": "#ffffff",
-            "border_color_button_hover": "#232323",
-            "bg_color_button_hover": "#232323",
-            "bg_color_button_gradient_hover": ""
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16,
+            "mg_top_des": 20,
+            "mg_top_btn": 30,
+            "button_width": 200
+          }
+        },
+        "zodiac_right": {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "",
+            "sub_title": "",
+            "des": "",
+            "title_align": "center",
+            "align_items": "center"
           }
         }
       },
       "block_order": [
-        "image_hmNDE4"
+        "zodiac_left",
+        "zodiac_center",
+        "zodiac_right"
       ],
       "settings": {
         "container": "default",
@@ -260,31 +247,31 @@
         "mg_minus_mobile": 0,
         "block_layout": "grid",
         "spotlight_block_swipe_on_mobile": "slider",
-        "column": "2",
+        "column": "3",
         "column_mb": "1",
         "center_mode": false,
         "item_distance": 0,
         "item_radius": 0,
-        "enable_arrows": true,
+        "enable_arrows": false,
         "enable_arrows_mb": false,
         "position_horizontal_slick_arrow": "0",
         "enable_dots": false,
         "enable_dots_mb": true,
         "display_border_bottom": false,
         "border_color": "#e3e3e3",
-        "spotlight_bg": "#ffffff",
+        "spotlight_bg": "#fef7f7",
         "spotlight_bg_gradient": "",
         "enable_custom_position_title": false,
-        "spotlight_block_title": "Zodiac",
-        "enable_border_title": true,
+        "spotlight_block_title": "",
+        "enable_border_title": false,
         "color_title": "#232323",
         "color_title_mb": "",
         "fontsize_title": 16,
         "fontsize_title_mb": 22,
         "margin_bottom_title": 20,
-        "spotlight_block_des": "DISCOVER YOUR SIGN",
+        "spotlight_block_des": "",
         "color_des": "#3c3c3c",
-        "margin_bottom_des": 40,
+        "margin_bottom_des": 30,
         "fontsize_des": 16,
         "title_align": "center",
         "view_all_style": "style_1",
@@ -322,16 +309,55 @@
         "shadow_spread": 0,
         "shadow_color": "transparent",
         "shadow_inset": "no",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_top_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_desktop": 80,
+        "mg_bottom_tablet": 60,
+        "mg_bottom_mobile": 40
       }
     },
     "lifestyle_section": {
       "type": "custom-image-banner",
+      "blocks": {
+        "lifestyle_grid": {
+          "type": "smallImg",
+          "settings": {
+            "enable_item_1": true,
+            "enable_item_2": true,
+            "enable_item_3": true,
+            "enable_item_4": true,
+            "image_1": "",
+            "image_2": "",
+            "image_3": "",
+            "image_4": "",
+            "link_1": "",
+            "link_2": "",
+            "link_3": "",
+            "link_4": "",
+            "title_1": "",
+            "title_2": "",
+            "title_3": "",
+            "title_4": "",
+            "sub_title_1": "",
+            "sub_title_2": "",
+            "sub_title_3": "",
+            "sub_title_4": "",
+            "item_width_1": "50%",
+            "item_width_2": "50%",
+            "item_width_3": "50%",
+            "item_width_4": "50%",
+            "item_grid_gap": 0,
+            "item_spacing_1": 0,
+            "item_spacing_2": 0,
+            "item_spacing_3": 0,
+            "item_spacing_4": 0
+          }
+        }
+      },
+      "block_order": [
+        "lifestyle_grid"
+      ],
       "settings": {
         "container": "default",
         "padding_full_width": 0,
@@ -340,25 +366,83 @@
         "custom_image_banner_bg": "#f8f6f4",
         "custom_image_banner_bg_gradient": "",
         "title_align": "center",
-        "custom_image_banner_title": "#Featured On Ella",
-        "enable_border_title": true,
+        "custom_image_banner_title": "",
+        "enable_border_title": false,
         "color_title": "#232323",
         "fontsize_title": 16,
         "fontsize_title_mb": 16,
-        "margin_bottom_title": 45,
+        "margin_bottom_title": 0,
         "custom_image_banner_des": "",
         "color_des": "#3c3c3c",
         "fontsize_des": 16,
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
       }
     },
     "very_verdura_section": {
       "type": "spotlight-block",
+      "blocks": {
+        "very_verdura_left": {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "",
+            "sub_title": "",
+            "des": "",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        },
+        "very_verdura_center": {
+          "type": "image",
+          "settings": {
+            "enable_image": false,
+            "image": "",
+            "link": "",
+            "title": "Very Verdura",
+            "sub_title": "GIFTS FOR EVERY OCCASION",
+            "des": "A collection of special pieces for gifting and receiving.",
+            "button": "SHOP NOW",
+            "title_align": "center",
+            "align_items": "center",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16,
+            "mg_top_des": 20,
+            "mg_top_btn": 30,
+            "button_width": 200
+          }
+        },
+        "very_verdura_right": {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "",
+            "sub_title": "",
+            "des": "",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        }
+      },
+      "block_order": [
+        "very_verdura_left",
+        "very_verdura_center",
+        "very_verdura_right"
+      ],
       "settings": {
         "container": "default",
         "padding_full_width": 0,
@@ -367,12 +451,12 @@
         "mg_minus_mobile": 0,
         "block_layout": "grid",
         "spotlight_block_swipe_on_mobile": "slider",
-        "column": "2",
+        "column": "3",
         "column_mb": "1",
         "center_mode": false,
         "item_distance": 0,
         "item_radius": 0,
-        "enable_arrows": true,
+        "enable_arrows": false,
         "enable_arrows_mb": false,
         "position_horizontal_slick_arrow": "0",
         "enable_dots": false,
@@ -382,16 +466,16 @@
         "spotlight_bg": "#ffffff",
         "spotlight_bg_gradient": "",
         "enable_custom_position_title": false,
-        "spotlight_block_title": "Very Verdura",
-        "enable_border_title": true,
+        "spotlight_block_title": "",
+        "enable_border_title": false,
         "color_title": "#232323",
         "color_title_mb": "",
         "fontsize_title": 16,
         "fontsize_title_mb": 22,
         "margin_bottom_title": 20,
-        "spotlight_block_des": "GIFTS FOR EVERY OCCASION",
+        "spotlight_block_des": "",
         "color_des": "#3c3c3c",
-        "margin_bottom_des": 40,
+        "margin_bottom_des": 30,
         "fontsize_des": 16,
         "title_align": "center",
         "view_all_style": "style_1",
@@ -429,16 +513,57 @@
         "shadow_spread": 0,
         "shadow_color": "transparent",
         "shadow_inset": "no",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_top_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_desktop": 80,
+        "mg_bottom_tablet": 60,
+        "mg_bottom_mobile": 40
       }
     },
     "visit_section": {
       "type": "spotlight-block",
+      "blocks": {
+        "visit_text": {
+          "type": "image",
+          "settings": {
+            "enable_image": false,
+            "image": "",
+            "link": "",
+            "title": "Visit",
+            "sub_title": "OUR SALON",
+            "des": "BY APPOINTMENT ONLY<br>745 Fifth Avenue<br>New York, NY 10151",
+            "button": "BOOK AN APPOINTMENT",
+            "title_align": "left",
+            "align_items": "flex-start",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16
+          }
+        },
+        "visit_image": {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "",
+            "sub_title": "",
+            "des": "",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        }
+      },
+      "block_order": [
+        "visit_text",
+        "visit_image"
+      ],
       "settings": {
         "container": "default",
         "padding_full_width": 0,
@@ -452,23 +577,23 @@
         "center_mode": false,
         "item_distance": 0,
         "item_radius": 0,
-        "enable_arrows": true,
+        "enable_arrows": false,
         "enable_arrows_mb": false,
         "position_horizontal_slick_arrow": "0",
         "enable_dots": false,
         "enable_dots_mb": true,
         "display_border_bottom": false,
         "border_color": "#e3e3e3",
-        "spotlight_bg": "#ffffff",
+        "spotlight_bg": "#fef7f7",
         "spotlight_bg_gradient": "",
         "enable_custom_position_title": false,
-        "spotlight_block_title": "Visit",
-        "enable_border_title": true,
+        "spotlight_block_title": "",
+        "enable_border_title": false,
         "color_title": "#232323",
         "color_title_mb": "",
         "fontsize_title": 16,
         "fontsize_title_mb": 22,
-        "margin_bottom_title": 45,
+        "margin_bottom_title": 20,
         "spotlight_block_des": "",
         "color_des": "#3c3c3c",
         "margin_bottom_des": 30,
@@ -509,12 +634,12 @@
         "shadow_spread": 0,
         "shadow_color": "transparent",
         "shadow_inset": "no",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_top_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_desktop": 80,
+        "mg_bottom_tablet": 60,
+        "mg_bottom_mobile": 40
       }
     },
     "new_arrivals_section": {
@@ -585,7 +710,7 @@
         "font_size_countdown_text": 14,
         "color_countdown": "#f42b23",
         "countdown_margin_left": 15,
-        "product_block_per_row": "4",
+        "product_block_per_row": "3",
         "product_block_infinite_scroll": true,
         "product_block_swipe_on_mobile": true,
         "enable_product_card_pd_bottom": false,
@@ -606,12 +731,12 @@
         "use_special_arrow_position": false,
         "spacing_bottom": 0,
         "spacing_right": 0,
-        "product_block_show": "5",
+        "product_block_show": "3",
         "button_text_slider": "",
         "button_link_slider": "",
         "button_width": 280,
         "btn_spacing_top": 49,
-        "product_block_per_view": "4",
+        "product_block_per_view": "3",
         "show_half": true,
         "scroll_width": 100,
         "scroll_height": 4,
@@ -642,16 +767,57 @@
         "product_price_color": "#010101",
         "product_price_sale_color": "#d12442",
         "product_price_compare_color": "#808080",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_top_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_desktop": 80,
+        "mg_bottom_tablet": 60,
+        "mg_bottom_mobile": 40
       }
     },
     "heritage_story_section": {
       "type": "spotlight-block",
+      "blocks": {
+        "heritage_image": {
+          "type": "image",
+          "settings": {
+            "enable_image": true,
+            "image": "",
+            "link": "",
+            "title": "",
+            "sub_title": "",
+            "des": "",
+            "title_align": "center",
+            "align_items": "center"
+          }
+        },
+        "heritage_text": {
+          "type": "image",
+          "settings": {
+            "enable_image": false,
+            "image": "",
+            "link": "",
+            "title": "Heritage",
+            "sub_title": "THE VERDURA STORY",
+            "des": "In 1939, Duke Fulco di Verdura created a new standard of luxury jewelry design. His innovative approach combined classical elegance with modern sophistication, establishing a legacy that continues to inspire today.",
+            "button": "READ THE FULL STORY",
+            "title_align": "left",
+            "align_items": "flex-start",
+            "color_title": "#333333",
+            "color_sub_title": "#666666",
+            "color_des": "#666666",
+            "color_button": "#ffffff",
+            "bg_color_button": "#333333",
+            "fontsize_title": 36,
+            "fontsize_sub_title": 14,
+            "fontsize_des": 16
+          }
+        }
+      },
+      "block_order": [
+        "heritage_image",
+        "heritage_text"
+      ],
       "settings": {
         "container": "default",
         "padding_full_width": 0,
@@ -665,23 +831,23 @@
         "center_mode": false,
         "item_distance": 0,
         "item_radius": 0,
-        "enable_arrows": true,
+        "enable_arrows": false,
         "enable_arrows_mb": false,
         "position_horizontal_slick_arrow": "0",
         "enable_dots": false,
         "enable_dots_mb": true,
         "display_border_bottom": false,
         "border_color": "#e3e3e3",
-        "spotlight_bg": "#ffffff",
+        "spotlight_bg": "#fef7f7",
         "spotlight_bg_gradient": "",
         "enable_custom_position_title": false,
-        "spotlight_block_title": "Heritage",
-        "enable_border_title": true,
+        "spotlight_block_title": "",
+        "enable_border_title": false,
         "color_title": "#232323",
         "color_title_mb": "",
         "fontsize_title": 16,
         "fontsize_title_mb": 22,
-        "margin_bottom_title": 45,
+        "margin_bottom_title": 20,
         "spotlight_block_des": "",
         "color_des": "#3c3c3c",
         "margin_bottom_des": 30,
@@ -722,16 +888,38 @@
         "shadow_spread": 0,
         "shadow_color": "transparent",
         "shadow_inset": "no",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_top_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_desktop": 80,
+        "mg_bottom_tablet": 60,
+        "mg_bottom_mobile": 40
       }
     },
     "newsletter_section": {
       "type": "newsletter",
+      "blocks": {
+        "newsletter_form": {
+          "type": "newsletter",
+          "settings": {
+            "section_title": "Sign up now",
+            "section_subtitle": "RECEIVE EXCLUSIVE UPDATES,<br>NEW ARRIVALS & MORE.",
+            "input_placeholder": "EMAIL ADDRESS",
+            "button_text": "SUBMIT",
+            "section_title_font_size": 48,
+            "section_title_font_size_mb": 32,
+            "section_subtitle_font_size": 16,
+            "section_subtitle_font_size_mb": 14,
+            "button_font_size": 14,
+            "button_width": 120,
+            "show_between_input_button": false,
+            "form_gap": 20
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_form"
+      ],
       "settings": {
         "container": "default",
         "padding_full_width": 0,
@@ -742,18 +930,17 @@
         "justify_section_content": "center",
         "section_item_distance": 0,
         "enable_social_media_below": false,
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_top_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_desktop": 80,
+        "mg_bottom_tablet": 60,
+        "mg_bottom_mobile": 40
       }
     }
   },
   "order": [
     "hero_banner",
-    "heritage_continuation",
     "necklaces_section",
     "zodiac_section",
     "lifestyle_section",
