@@ -1019,7 +1019,7 @@
     "new_arrivals_section": {
       "type": "new-arrivals-jewelry",
       "settings": {
-        "title": "New Arrivals2",
+        "title": "New Arrivals",
         "subtitle": "Discover our latest jewelry collection",
         "collection": "frontpage",
         "product_limit": 12,
