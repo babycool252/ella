@@ -1,12 +1,4 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+
 {
   "sections": {
     "hero_banner": {
@@ -184,6 +176,262 @@
       "settings": {
         "filter_title": "Earclips",
         "show_navigation_arrows": true,
+        "container": "default",
+        "mg_top_desktop": 80,
+        "mg_bottom_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_bottom_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_mobile": 40,
+        "padding_full_width": 15
+      }
+    },
+    "product_gallery_section": {
+      "type": "product-category-filter",
+      "blocks": {
+        "category_bracelets": {
+          "type": "category",
+          "settings": {
+            "category_name": "BRACELETS",
+            "category_handle": "bracelets",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_earclips": {
+          "type": "category",
+          "settings": {
+            "category_name": "EARCLIPS",
+            "category_handle": "earclips",
+            "category_link": "",
+            "is_active": true
+          }
+        },
+        "category_cuffs": {
+          "type": "category",
+          "settings": {
+            "category_name": "CUFFS",
+            "category_handle": "cuffs",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_rings": {
+          "type": "category",
+          "settings": {
+            "category_name": "RINGS",
+            "category_handle": "rings",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_necklaces": {
+          "type": "category",
+          "settings": {
+            "category_name": "NECKLACES",
+            "category_handle": "necklaces",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "view_collection_link": {
+          "type": "category",
+          "settings": {
+            "category_name": "VIEW COLLECTION",
+            "category_handle": "view-collection",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "product_earclip_1": {
+          "type": "product",
+          "settings": {
+            "product_title": "Pearl Cage Earclips",
+            "product_price": "$2,800",
+            "product_category": "earclips",
+            "product_image": "earclip-pearl-cage.jpg",
+            "product_description": "Spherical earclips featuring a large, lustrous white pearl encased within a delicate, intricate gold cage-like structure."
+          }
+        },
+        "product_earclip_2": {
+          "type": "product",
+          "settings": {
+            "product_title": "Diamond Flame Earclips",
+            "product_price": "$4,200",
+            "product_category": "earclips",
+            "product_image": "earclip-diamond-flame.jpg",
+            "product_description": "Organic, flame-like shape entirely covered in sparkling silver-toned pavé diamonds or crystals, giving them a highly textured and brilliant appearance."
+          }
+        },
+        "product_earclip_3": {
+          "type": "product",
+          "settings": {
+            "product_title": "C-Shape Diamond Earclips",
+            "product_price": "$3,600",
+            "product_category": "earclips",
+            "product_image": "earclip-c-shape.jpg",
+            "product_description": "C-shaped earclips made of textured gold with a central horizontal band of small, sparkling diamonds or crystals."
+          }
+        },
+        "product_bracelet_1": {
+          "type": "product",
+          "settings": {
+            "product_title": "Delicate Gold Chain Bracelet",
+            "product_price": "$1,200",
+            "product_category": "bracelets",
+            "product_image": "bracelet-gold-chain.jpg",
+            "product_description": "Elegant gold chain bracelet with delicate links and sophisticated design."
+          }
+        },
+        "product_bracelet_2": {
+          "type": "product",
+          "settings": {
+            "product_title": "Interlocking Chain Bracelet",
+            "product_price": "$2,800",
+            "product_category": "bracelets",
+            "product_image": "bracelet-interlocking.jpg",
+            "product_description": "Unique interlocking chain design with modern appeal and luxurious finish."
+          }
+        },
+        "product_bracelet_3": {
+          "type": "product",
+          "settings": {
+            "product_title": "Diamond Accent Bracelet",
+            "product_price": "$3,500",
+            "product_category": "bracelets",
+            "product_image": "bracelet-diamond-accent.jpg",
+            "product_description": "Sophisticated bracelet with diamond accents and premium craftsmanship."
+          }
+        },
+        "product_cuff_1": {
+          "type": "product",
+          "settings": {
+            "product_title": "Wide Gold Cuff",
+            "product_price": "$2,500",
+            "product_category": "cuffs",
+            "product_image": "cuff-gold-wide.jpg",
+            "product_description": "Bold wide gold cuff with elegant design and comfortable fit."
+          }
+        },
+        "product_cuff_2": {
+          "type": "product",
+          "settings": {
+            "product_title": "Diamond Cuff",
+            "product_price": "$4,800",
+            "product_category": "cuffs",
+            "product_image": "cuff-diamond.jpg",
+            "product_description": "Luxurious diamond-studded cuff with exceptional sparkle and elegance."
+          }
+        },
+        "product_cuff_3": {
+          "type": "product",
+          "settings": {
+            "product_title": "Textured Silver Cuff",
+            "product_price": "$1,800",
+            "product_category": "cuffs",
+            "product_image": "cuff-silver-textured.jpg",
+            "product_description": "Artistic textured silver cuff with unique pattern and modern appeal."
+          }
+        },
+        "product_ring_1": {
+          "type": "product",
+          "settings": {
+            "product_title": "Diamond Solitaire Ring",
+            "product_price": "$5,200",
+            "product_category": "rings",
+            "product_image": "ring-diamond-solitaire.jpg",
+            "product_description": "Classic diamond solitaire ring with exceptional brilliance and timeless design."
+          }
+        },
+        "product_ring_2": {
+          "type": "product",
+          "settings": {
+            "product_title": "Gold Band Ring",
+            "product_price": "$1,500",
+            "product_category": "rings",
+            "product_image": "ring-gold-band.jpg",
+            "product_description": "Elegant gold band ring with sophisticated simplicity and premium finish."
+          }
+        },
+        "product_ring_3": {
+          "type": "product",
+          "settings": {
+            "product_title": "Gemstone Ring",
+            "product_price": "$3,200",
+            "product_category": "rings",
+            "product_image": "ring-gemstone.jpg",
+            "product_description": "Stunning gemstone ring with vibrant colors and exceptional craftsmanship."
+          }
+        },
+        "product_necklace_1": {
+          "type": "product",
+          "settings": {
+            "product_title": "Pearl Necklace",
+            "product_price": "$2,800",
+            "product_category": "necklaces",
+            "product_image": "necklace-pearl.jpg",
+            "product_description": "Elegant pearl necklace with classic design and timeless beauty."
+          }
+        },
+        "product_necklace_2": {
+          "type": "product",
+          "settings": {
+            "product_title": "Diamond Pendant Necklace",
+            "product_price": "$4,500",
+            "product_category": "necklaces",
+            "product_image": "necklace-diamond-pendant.jpg",
+            "product_description": "Sophisticated diamond pendant necklace with exceptional sparkle and elegance."
+          }
+        },
+        "product_necklace_3": {
+          "type": "product",
+          "settings": {
+            "product_title": "Gold Chain Necklace",
+            "product_price": "$1,800",
+            "product_category": "necklaces",
+            "product_image": "necklace-gold-chain.jpg",
+            "product_description": "Classic gold chain necklace with premium finish and versatile design."
+          }
+        }
+      },
+      "block_order": [
+        "category_bracelets",
+        "category_earclips",
+        "category_cuffs",
+        "category_rings",
+        "category_necklaces",
+        "view_collection_link",
+        "product_earclip_1",
+        "product_earclip_2",
+        "product_earclip_3",
+        "product_bracelet_1",
+        "product_bracelet_2",
+        "product_bracelet_3",
+        "product_cuff_1",
+        "product_cuff_2",
+        "product_cuff_3",
+        "product_ring_1",
+        "product_ring_2",
+        "product_ring_3",
+        "product_necklace_1",
+        "product_necklace_2",
+        "product_necklace_3"
+      ],
+      "settings": {
+        "filter_title": "Earclips",
+        "show_navigation_arrows": true,
+        "show_dots": false,
+        "enable_category_filter": true,
+        "enable_product_gallery": true,
+        "gallery_layout": "horizontal",
+        "products_per_view": 3,
+        "enable_product_reflection": true,
+        "enable_category_highlight": true,
+        "category_font_size": 14,
+        "category_font_weight": "400",
+        "selected_category_font_size": 24,
+        "selected_category_font_weight": "600",
+        "selected_category_font_family": "serif",
         "container": "default",
         "mg_top_desktop": 80,
         "mg_bottom_desktop": 80,
@@ -1260,6 +1508,7 @@
   "order": [
     "hero_banner",
     "earclips_section",
+    "product_gallery_section",
     "zodiac_section",
     "lifestyle_section",
     "very_verdura_section",
