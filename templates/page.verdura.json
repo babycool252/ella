@@ -98,7 +98,7 @@
             "category_handle": "bracelets",
             "collection_handle": "frontpage",
             "category_link": "",
-            "is_active": true
+            "is_active": false
           }
         },
         "category_earclips": {
@@ -118,7 +118,7 @@
             "category_handle": "cuffs",
             "collection_handle": "frontpage",
             "category_link": "",
-            "is_active": false
+            "is_active": true
           }
         },
         "category_rings": {
