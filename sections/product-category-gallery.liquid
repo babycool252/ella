@@ -119,12 +119,13 @@
   }
 
   .category-link--active {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 600;
     font-family: serif;
     color: #333333;
     text-transform: none;
     letter-spacing: 0;
+    line-height: 1.2;
   }
 
   .category-link:hover {
@@ -143,20 +144,21 @@
   }
 
   .product-slides {
-    display: flex;
-    transition: transform 0.5s ease;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
   }
 
   .product-slide {
-    flex: 0 0 100%;
-    display: none;
     opacity: 0;
     transition: opacity 0.5s ease;
+    transform: scale(0.95);
   }
 
   .product-slide--active {
-    display: block;
     opacity: 1;
+    transform: scale(1);
   }
 
   .product-item {
@@ -172,13 +174,11 @@
     width: 100%;
     max-width: 400px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
 
   .product-item__image:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 
   /* Reflection Effect */
@@ -208,17 +208,18 @@
   }
 
   .product-item__title {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     color: #333333;
     margin: 0 0 8px 0;
+    line-height: 1.4;
   }
 
   .product-item__price {
-    font-size: 16px;
-    font-weight: 600;
-    color: #d4af37;
-    margin: 0 0 12px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    margin: 0;
   }
 
   .product-item__description {
@@ -315,6 +316,13 @@
   }
 
   /* Responsive Design */
+  @media (max-width: 1024px) {
+    .product-slides {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }
+
   @media (max-width: 768px) {
     .product-category-gallery__container {
       grid-template-columns: 1fr;
@@ -326,23 +334,25 @@
       overflow-x: auto;
       gap: 30px;
       padding-bottom: 10px;
+      white-space: nowrap;
+    }
+
+    .category-item {
+      flex-shrink: 0;
     }
 
     .category-link--active {
-      font-size: 20px;
+      font-size: 28px;
+      white-space: nowrap;
+    }
+
+    .product-slides {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
 
     .gallery-nav {
-      width: 35px;
-      height: 35px;
-    }
-
-    .gallery-nav--prev {
-      left: 10px;
-    }
-
-    .gallery-nav--next {
-      right: 10px;
+      display: none;
     }
   }
 
@@ -352,7 +362,7 @@
     }
 
     .category-link--active {
-      font-size: 18px;
+      font-size: 24px;
     }
 
     .product-item__title {
@@ -361,6 +371,10 @@
 
     .product-item__price {
       font-size: 14px;
+    }
+
+    .product-slides {
+      padding: 0 10px;
     }
   }
 </style>
@@ -446,9 +460,12 @@
     renderProducts() {
       this.slidesContainer.innerHTML = '';
       
-      this.currentProducts.forEach((product, index) => {
+      // Show only first 3 products
+      const productsToShow = this.currentProducts.slice(0, 3);
+      
+      productsToShow.forEach((product, index) => {
         const slide = document.createElement('div');
-        slide.className = `product-slide${index === 0 ? ' product-slide--active' : ''}`;
+        slide.className = 'product-slide product-slide--active';
         slide.dataset.slideIndex = index;
         
         const featuredImage = product.featured_image || product.images?.[0];
@@ -477,6 +494,9 @@
         this.slidesContainer.appendChild(slide);
       });
 
+      // Update total slides count for navigation
+      this.totalSlides = productsToShow.length;
+      
       // Update dots if enabled
       this.updateDots();
     }
@@ -514,47 +534,30 @@
     }
 
     prevSlide() {
-      if (this.totalSlides === 0) return;
-      this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
-      this.updateActiveSlide();
+      // Navigation disabled as we show all 3 products at once
+      return;
     }
 
     nextSlide() {
-      if (this.totalSlides === 0) return;
-      this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
-      this.updateActiveSlide();
+      // Navigation disabled as we show all 3 products at once
+      return;
     }
 
     goToSlide(index) {
-      if (this.totalSlides === 0) return;
-      this.currentSlide = index;
-      this.updateActiveSlide();
+      // Navigation disabled as we show all 3 products at once
+      return;
     }
 
     updateActiveSlide() {
-      const slides = this.slidesContainer.querySelectorAll('.product-slide');
-      slides.forEach((slide, index) => {
-        slide.classList.toggle('product-slide--active', index === this.currentSlide);
-      });
-
-      // Update dots
-      this.updateDots();
+      // All products are shown at once, no need to update active state
+      return;
     }
 
     updateDots() {
+      // Dots navigation disabled as we show all 3 products at once
       const dotsContainer = this.container.querySelector('[data-dots]');
-      if (!dotsContainer) return;
-
-      dotsContainer.innerHTML = '';
-      
-      for (let i = 0; i < this.totalSlides; i++) {
-        const dot = document.createElement('button');
-        dot.className = `gallery-dot${i === this.currentSlide ? ' gallery-dot--active' : ''}`;
-        dot.dataset.dotIndex = i;
-        dot.setAttribute('aria-label', `Go to product ${i + 1}`);
-        
-        dot.addEventListener('click', () => this.goToSlide(i));
-        dotsContainer.appendChild(dot);
+      if (dotsContainer) {
+        dotsContainer.innerHTML = '';
       }
     }
   }
