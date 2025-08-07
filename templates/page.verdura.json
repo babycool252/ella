@@ -88,113 +88,6 @@
         "mg_bottom_mobile": 0
       }
     },
-    "earclips_section": {
-      "type": "product-category-filter",
-      "blocks": {
-        "category_bracelets": {
-          "type": "category",
-          "settings": {
-            "category_name": "BRACELETS",
-            "category_handle": "bracelets",
-            "category_link": "",
-            "is_active": true
-          }
-        },
-        "category_earclips": {
-          "type": "category",
-          "settings": {
-            "category_name": "EARCLIPS",
-            "category_handle": "earclips",
-            "category_link": "",
-            "is_active": true
-          }
-        },
-        "category_cuffs": {
-          "type": "category",
-          "settings": {
-            "category_name": "CUFFS",
-            "category_handle": "cuffs",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_rings": {
-          "type": "category",
-          "settings": {
-            "category_name": "RINGS",
-            "category_handle": "rings",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_necklaces": {
-          "type": "category",
-          "settings": {
-            "category_name": "NECKLACES",
-            "category_handle": "necklaces",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "view_collection": {
-          "type": "category",
-          "settings": {
-            "category_name": "VIEW COLLECTION",
-            "category_handle": "view-collection",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "product_earclip_1": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/Mondello-Bangle_Black-Ceramic-Gold_O-V2_PUPA_23_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
-            "product_title": "Pearl Cage Earclips",
-            "product_price": "$2,800",
-            "product_category": "earclips"
-          }
-        },
-        "product_earclip_2": {
-          "type": "product",
-          "settings": {
-            "product_title": "Diamond Flame Earclips",
-            "product_price": "$4,200",
-            "product_category": "earclips"
-          }
-        },
-        "product_earclip_3": {
-          "type": "product",
-          "settings": {
-            "product_title": "C-Shape Diamond Earclips",
-            "product_price": "$3,600",
-            "product_category": "earclips"
-          }
-        }
-      },
-      "block_order": [
-        "category_bracelets",
-        "category_earclips",
-        "category_cuffs",
-        "category_rings",
-        "category_necklaces",
-        "view_collection",
-        "product_earclip_1",
-        "product_earclip_2",
-        "product_earclip_3"
-      ],
-      "settings": {
-        "filter_title": "Earclips",
-        "show_navigation_arrows": true,
-        "container": "default",
-        "mg_top_desktop": 80,
-        "mg_bottom_desktop": 80,
-        "mg_top_tablet": 60,
-        "mg_bottom_tablet": 60,
-        "mg_top_mobile": 40,
-        "mg_bottom_mobile": 40,
-        "padding_full_width": 15
-      }
-    },
     "product_gallery_section": {
       "type": "product-category-gallery",
       "blocks": {
@@ -255,136 +148,136 @@
         "product_earclip_1": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/earclip-pearl-cage_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Pearl Cage Earclips",
             "product_price": "$2,800",
-            "product_category": "earclips"
+            "product_category": "earclips",
+            "product_description": ""
           }
         },
         "product_earclip_2": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/earclip-diamond-flame_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Flame Earclips",
             "product_price": "$4,200",
-            "product_category": "earclips"
+            "product_category": "earclips",
+            "product_description": ""
           }
         },
         "product_earclip_3": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/earclip-c-shape_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "C-Shape Diamond Earclips",
             "product_price": "$3,600",
-            "product_category": "earclips"
+            "product_category": "earclips",
+            "product_description": ""
           }
         },
         "product_bracelet_1": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/bracelet-gold-chain_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Delicate Gold Chain Bracelet",
             "product_price": "$1,200",
-            "product_category": "bracelets"
+            "product_category": "bracelets",
+            "product_description": ""
           }
         },
         "product_bracelet_2": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/bracelet-interlocking_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Interlocking Chain Bracelet",
             "product_price": "$2,800",
-            "product_category": "bracelets"
+            "product_category": "bracelets",
+            "product_description": ""
           }
         },
         "product_bracelet_3": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/bracelet-diamond-accent_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Accent Bracelet",
             "product_price": "$3,500",
-            "product_category": "bracelets"
+            "product_category": "bracelets",
+            "product_description": ""
           }
         },
         "product_cuff_1": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/cuff-gold-wide_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Wide Gold Cuff",
             "product_price": "$2,500",
-            "product_category": "cuffs"
+            "product_category": "cuffs",
+            "product_description": ""
           }
         },
         "product_cuff_2": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/cuff-diamond_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Cuff",
             "product_price": "$4,800",
-            "product_category": "cuffs"
+            "product_category": "cuffs",
+            "product_description": ""
           }
         },
         "product_cuff_3": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/cuff-silver-textured_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Textured Silver Cuff",
             "product_price": "$1,800",
-            "product_category": "cuffs"
+            "product_category": "cuffs",
+            "product_description": ""
           }
         },
         "product_ring_1": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/ring-diamond-solitaire_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Solitaire Ring",
             "product_price": "$5,200",
-            "product_category": "rings"
+            "product_category": "rings",
+            "product_description": ""
           }
         },
         "product_ring_2": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/ring-gold-band_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Gold Band Ring",
             "product_price": "$1,500",
-            "product_category": "rings"
+            "product_category": "rings",
+            "product_description": ""
           }
         },
         "product_ring_3": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/ring-gemstone_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Gemstone Ring",
             "product_price": "$3,200",
-            "product_category": "rings"
+            "product_category": "rings",
+            "product_description": ""
           }
         },
         "product_necklace_1": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/necklace-pearl_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Pearl Necklace",
             "product_price": "$2,800",
-            "product_category": "necklaces"
+            "product_category": "necklaces",
+            "product_description": ""
           }
         },
         "product_necklace_2": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/necklace-diamond-pendant_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Pendant Necklace",
             "product_price": "$4,500",
-            "product_category": "necklaces"
+            "product_category": "necklaces",
+            "product_description": ""
           }
         },
         "product_necklace_3": {
           "type": "product",
           "settings": {
-            "product_image": "shopify://shop_images/necklace-gold-chain_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Gold Chain Necklace",
             "product_price": "$1,800",
-            "product_category": "necklaces"
+            "product_category": "necklaces",
+            "product_description": ""
           }
         }
       },
@@ -413,14 +306,9 @@
       ],
       "settings": {
         "show_navigation_arrows": true,
-        "container": "default",
-        "mg_top_desktop": 80,
-        "mg_bottom_desktop": 80,
-        "mg_top_tablet": 60,
-        "mg_bottom_tablet": 60,
-        "mg_top_mobile": 40,
-        "mg_bottom_mobile": 40,
-        "padding_full_width": 15
+        "show_dots": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "zodiac_section": {
@@ -1488,7 +1376,6 @@
   },
   "order": [
     "hero_banner",
-    "earclips_section",
     "product_gallery_section",
     "zodiac_section",
     "lifestyle_section",
