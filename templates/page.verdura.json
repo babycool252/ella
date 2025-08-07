@@ -88,101 +88,101 @@
         "mg_bottom_mobile": 0
       }
     },
-    "bracelets_section": {
+    "earclips_section": {
       "type": "product-category-filter",
       "blocks": {
-        "category_all": {
+        "category_bracelets": {
           "type": "category",
           "settings": {
-            "category_name": "ALL",
-            "category_handle": "all",
+            "category_name": "BRACELETS",
+            "category_handle": "bracelets",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_earclips": {
+          "type": "category",
+          "settings": {
+            "category_name": "EARCLIPS",
+            "category_handle": "earclips",
             "category_link": "",
             "is_active": true
           }
         },
-        "category_gold": {
+        "category_cuffs": {
           "type": "category",
           "settings": {
-            "category_name": "GOLD",
-            "category_handle": "gold",
+            "category_name": "CUFFS",
+            "category_handle": "cuffs",
             "category_link": "",
             "is_active": false
           }
         },
-        "category_silver": {
+        "category_rings": {
           "type": "category",
           "settings": {
-            "category_name": "SILVER",
-            "category_handle": "silver",
+            "category_name": "RINGS",
+            "category_handle": "rings",
             "category_link": "",
             "is_active": false
           }
         },
-        "category_gemstone": {
+        "category_necklaces": {
           "type": "category",
           "settings": {
-            "category_name": "GEMSTONE",
-            "category_handle": "gemstone",
+            "category_name": "NECKLACES",
+            "category_handle": "necklaces",
             "category_link": "",
             "is_active": false
           }
         },
-        "category_new_arrivals": {
+        "view_collection": {
           "type": "category",
           "settings": {
-            "category_name": "NEW ARRIVALS",
-            "category_handle": "new-arrivals",
+            "category_name": "VIEW COLLECTION",
+            "category_handle": "view-collection",
             "category_link": "",
             "is_active": false
           }
         },
-        "category_best_sellers": {
-          "type": "category",
-          "settings": {
-            "category_name": "BEST SELLERS",
-            "category_handle": "best-sellers",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "product_bracelet_1": {
+        "product_earclip_1": {
           "type": "product",
           "settings": {
-            "product_title": "Delicate Gold Chain with Coin Charms",
-            "product_price": "$1,200",
-            "product_category": "bracelets"
-          }
-        },
-        "product_bracelet_2": {
-          "type": "product",
-          "settings": {
-            "product_title": "Interlocking Chain Bracelet",
+            "product_title": "Pearl Cage Earclips",
             "product_price": "$2,800",
-            "product_category": "bracelets"
+            "product_category": "earclips"
           }
         },
-        "product_bracelet_3": {
+        "product_earclip_2": {
           "type": "product",
           "settings": {
-            "product_title": "Diamond Accent Bracelet",
-            "product_price": "$3,500",
-            "product_category": "bracelets"
+            "product_title": "Diamond Flame Earclips",
+            "product_price": "$4,200",
+            "product_category": "earclips"
+          }
+        },
+        "product_earclip_3": {
+          "type": "product",
+          "settings": {
+            "product_title": "C-Shape Diamond Earclips",
+            "product_price": "$3,600",
+            "product_category": "earclips"
           }
         }
       },
       "block_order": [
-        "category_all",
-        "category_gold",
-        "category_silver",
-        "category_gemstone",
-        "category_new_arrivals",
-        "category_best_sellers",
-        "product_bracelet_1",
-        "product_bracelet_2",
-        "product_bracelet_3"
+        "category_bracelets",
+        "category_earclips",
+        "category_cuffs",
+        "category_rings",
+        "category_necklaces",
+        "view_collection",
+        "product_earclip_1",
+        "product_earclip_2",
+        "product_earclip_3"
       ],
       "settings": {
-        "filter_title": "Bracelets",
+        "filter_title": "Earclips",
         "show_navigation_arrows": true,
         "container": "default",
         "mg_top_desktop": 80,
@@ -1026,113 +1026,6 @@
         "mg_bottom_mobile": 40
       }
     },
-    "earclips_section": {
-      "type": "product-category-filter",
-      "blocks": {
-        "category_bracelets": {
-          "type": "category",
-          "settings": {
-            "category_name": "BRACELETS",
-            "category_handle": "bracelets",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_earclips": {
-          "type": "category",
-          "settings": {
-            "category_name": "EARCLIPS",
-            "category_handle": "earclips",
-            "category_link": "",
-            "is_active": true
-          }
-        },
-        "category_cuffs": {
-          "type": "category",
-          "settings": {
-            "category_name": "CUFFS",
-            "category_handle": "cuffs",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_rings": {
-          "type": "category",
-          "settings": {
-            "category_name": "RINGS",
-            "category_handle": "rings",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_necklaces": {
-          "type": "category",
-          "settings": {
-            "category_name": "NECKLACES",
-            "category_handle": "necklaces",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "view_collection": {
-          "type": "category",
-          "settings": {
-            "category_name": "VIEW COLLECTION",
-            "category_handle": "view-collection",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "product_earclip_1": {
-          "type": "product",
-          "settings": {
-            "product_title": "Pearl Cage Earclips",
-            "product_price": "$2,800",
-            "product_category": "earclips"
-          }
-        },
-        "product_earclip_2": {
-          "type": "product",
-          "settings": {
-            "product_title": "Diamond Flame Earclips",
-            "product_price": "$4,200",
-            "product_category": "earclips"
-          }
-        },
-        "product_earclip_3": {
-          "type": "product",
-          "settings": {
-            "product_title": "C-Shape Diamond Earclips",
-            "product_price": "$3,600",
-            "product_category": "earclips"
-          }
-        }
-      },
-      "block_order": [
-        "category_bracelets",
-        "category_earclips",
-        "category_cuffs",
-        "category_rings",
-        "category_necklaces",
-        "view_collection",
-        "product_earclip_1",
-        "product_earclip_2",
-        "product_earclip_3"
-      ],
-      "settings": {
-        "filter_title": "Earclips",
-        "show_navigation_arrows": true,
-        "show_dots": false,
-        "container": "default",
-        "mg_top_desktop": 80,
-        "mg_bottom_desktop": 80,
-        "mg_top_tablet": 60,
-        "mg_bottom_tablet": 60,
-        "mg_top_mobile": 40,
-        "mg_bottom_mobile": 40,
-        "padding_full_width": 15
-      }
-    },
     "new_arrivals_section": {
       "type": "new-arrivals-jewelry",
       "settings": {
@@ -1366,7 +1259,6 @@
   },
   "order": [
     "hero_banner",
-    "bracelets_section",
     "earclips_section",
     "zodiac_section",
     "lifestyle_section",
