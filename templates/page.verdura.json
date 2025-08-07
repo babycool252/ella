@@ -1,12 +1,4 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+
 {
   "sections": {
     "hero_banner": {
@@ -95,7 +87,8 @@
           "type": "category",
           "settings": {
             "category_name": "BRACELETS",
-            "category_handle": "bracelets{{ page.title }}",
+            "category_handle": "bracelets",
+            "collection_handle": "bracelets",
             "category_link": "",
             "is_active": true
           }
@@ -105,6 +98,7 @@
           "settings": {
             "category_name": "EARCLIPS",
             "category_handle": "earclips",
+            "collection_handle": "earclips",
             "category_link": "",
             "is_active": true
           }
@@ -114,6 +108,7 @@
           "settings": {
             "category_name": "CUFFS",
             "category_handle": "cuffs",
+            "collection_handle": "cuffs",
             "category_link": "",
             "is_active": false
           }
@@ -123,6 +118,7 @@
           "settings": {
             "category_name": "RINGS",
             "category_handle": "rings",
+            "collection_handle": "rings",
             "category_link": "",
             "is_active": false
           }
@@ -132,6 +128,7 @@
           "settings": {
             "category_name": "NECKLACES",
             "category_handle": "necklaces",
+            "collection_handle": "necklaces",
             "category_link": "",
             "is_active": false
           }
@@ -141,143 +138,9 @@
           "settings": {
             "category_name": "VIEW COLLECTION",
             "category_handle": "view-collection",
-            "category_link": "",
+            "collection_handle": "all",
+            "category_link": "/collections/all",
             "is_active": false
-          }
-        },
-        "product_earclip_1": {
-          "type": "product",
-          "settings": {
-            "product_title": "Pearl Cage Earclips",
-            "product_price": "$2,800",
-            "product_category": "earclips",
-            "product_description": ""
-          }
-        },
-        "product_earclip_2": {
-          "type": "product",
-          "settings": {
-            "product_title": "Diamond Flame Earclips",
-            "product_price": "$4,200",
-            "product_category": "earclips",
-            "product_description": ""
-          }
-        },
-        "product_earclip_3": {
-          "type": "product",
-          "settings": {
-            "product_title": "C-Shape Diamond Earclips",
-            "product_price": "$3,600",
-            "product_category": "earclips",
-            "product_description": ""
-          }
-        },
-        "product_bracelet_1": {
-          "type": "product",
-          "settings": {
-            "product_title": "Delicate Gold Chain Bracelet",
-            "product_price": "$1,200",
-            "product_category": "bracelets",
-            "product_description": ""
-          }
-        },
-        "product_bracelet_2": {
-          "type": "product",
-          "settings": {
-            "product_title": "Interlocking Chain Bracelet",
-            "product_price": "$2,800",
-            "product_category": "bracelets",
-            "product_description": ""
-          }
-        },
-        "product_bracelet_3": {
-          "type": "product",
-          "settings": {
-            "product_title": "Diamond Accent Bracelet",
-            "product_price": "$3,500",
-            "product_category": "bracelets",
-            "product_description": ""
-          }
-        },
-        "product_cuff_1": {
-          "type": "product",
-          "settings": {
-            "product_title": "Wide Gold Cuff",
-            "product_price": "$2,500",
-            "product_category": "cuffs",
-            "product_description": ""
-          }
-        },
-        "product_cuff_2": {
-          "type": "product",
-          "settings": {
-            "product_title": "Diamond Cuff",
-            "product_price": "$4,800",
-            "product_category": "cuffs",
-            "product_description": ""
-          }
-        },
-        "product_cuff_3": {
-          "type": "product",
-          "settings": {
-            "product_title": "Textured Silver Cuff",
-            "product_price": "$1,800",
-            "product_category": "cuffs",
-            "product_description": ""
-          }
-        },
-        "product_ring_1": {
-          "type": "product",
-          "settings": {
-            "product_title": "Diamond Solitaire Ring",
-            "product_price": "$5,200",
-            "product_category": "rings",
-            "product_description": ""
-          }
-        },
-        "product_ring_2": {
-          "type": "product",
-          "settings": {
-            "product_title": "Gold Band Ring",
-            "product_price": "$1,500",
-            "product_category": "rings",
-            "product_description": ""
-          }
-        },
-        "product_ring_3": {
-          "type": "product",
-          "settings": {
-            "product_title": "Gemstone Ring",
-            "product_price": "$3,200",
-            "product_category": "rings",
-            "product_description": ""
-          }
-        },
-        "product_necklace_1": {
-          "type": "product",
-          "settings": {
-            "product_title": "Pearl Necklace",
-            "product_price": "$2,800",
-            "product_category": "necklaces",
-            "product_description": ""
-          }
-        },
-        "product_necklace_2": {
-          "type": "product",
-          "settings": {
-            "product_title": "Diamond Pendant Necklace",
-            "product_price": "$4,500",
-            "product_category": "necklaces",
-            "product_description": ""
-          }
-        },
-        "product_necklace_3": {
-          "type": "product",
-          "settings": {
-            "product_title": "Gold Chain Necklace",
-            "product_price": "$1,800",
-            "product_category": "necklaces",
-            "product_description": ""
           }
         }
       },
@@ -287,22 +150,7 @@
         "category_cuffs",
         "category_rings",
         "category_necklaces",
-        "view_collection_link",
-        "product_earclip_1",
-        "product_earclip_2",
-        "product_earclip_3",
-        "product_bracelet_1",
-        "product_bracelet_2",
-        "product_bracelet_3",
-        "product_cuff_1",
-        "product_cuff_2",
-        "product_cuff_3",
-        "product_ring_1",
-        "product_ring_2",
-        "product_ring_3",
-        "product_necklace_1",
-        "product_necklace_2",
-        "product_necklace_3"
+        "view_collection_link"
       ],
       "settings": {
         "show_navigation_arrows": true,
