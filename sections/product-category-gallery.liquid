@@ -180,7 +180,7 @@
     text-align: center;
     background: #ffffff;
     border-radius: 12px;
-    padding: 30px 20px 35px;
+    padding: 40px 15px 35px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     border: 1px solid rgba(0, 0, 0, 0.02);
@@ -193,49 +193,45 @@
 
   .product-item__image-wrapper {
     position: relative;
-    margin-bottom: 25px;
-    overflow: hidden;
-    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: visible;
+    border-radius: 0;
+    padding: 0;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .product-item__image {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     transition: transform 0.4s ease;
     display: block;
+    background: transparent;
+    filter: contrast(1.1) brightness(1.05);
   }
 
   .product-item__image:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
 
-  /* Reflection Effect */
-  .product-item__image-wrapper::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 15px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
-    border-radius: 50%;
-    filter: blur(3px);
-    opacity: 0.6;
-  }
+  /* Remove reflection effect to let products blend with background */
 
   .product-item__placeholder {
     width: 100%;
     max-width: 100%;
-    height: 300px;
+    height: 350px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 8px;
-    border: 2px dashed #dee2e6;
+    background: transparent;
+    border-radius: 0;
+    border: 1px dashed #e0e0e0;
   }
 
   .product-item__title {
@@ -440,7 +436,12 @@
     }
 
     .product-item {
-      padding: 20px 15px 25px;
+      padding: 30px 15px 25px;
+    }
+
+    .product-item__image-wrapper {
+      height: 280px;
+      margin-bottom: 25px;
     }
 
     .gallery-nav {
@@ -488,6 +489,7 @@
     }
 
     .product-item__image-wrapper {
+      height: 300px;
       margin-bottom: 20px;
     }
   }
