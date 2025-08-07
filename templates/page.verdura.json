@@ -1,4 +1,12 @@
-
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_banner": {
@@ -194,9 +202,9 @@
           "type": "category",
           "settings": {
             "category_name": "BRACELETS",
-            "category_handle": "bracelets",
+            "category_handle": "bracelets{{ page.title }}",
             "category_link": "",
-            "is_active": false
+            "is_active": true
           }
         },
         "category_earclips": {
@@ -250,8 +258,7 @@
             "product_image": "shopify://shop_images/earclip-pearl-cage_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Pearl Cage Earclips",
             "product_price": "$2,800",
-            "product_category": "earclips",
-            "product_description": "Spherical earclips featuring a large, lustrous white pearl encased within a delicate, intricate gold cage-like structure."
+            "product_category": "earclips"
           }
         },
         "product_earclip_2": {
@@ -260,8 +267,7 @@
             "product_image": "shopify://shop_images/earclip-diamond-flame_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Flame Earclips",
             "product_price": "$4,200",
-            "product_category": "earclips",
-            "product_description": "Organic, flame-like shape entirely covered in sparkling silver-toned pavé diamonds or crystals, giving them a highly textured and brilliant appearance."
+            "product_category": "earclips"
           }
         },
         "product_earclip_3": {
@@ -270,8 +276,7 @@
             "product_image": "shopify://shop_images/earclip-c-shape_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "C-Shape Diamond Earclips",
             "product_price": "$3,600",
-            "product_category": "earclips",
-            "product_description": "C-shaped earclips made of textured gold with a central horizontal band of small, sparkling diamonds or crystals."
+            "product_category": "earclips"
           }
         },
         "product_bracelet_1": {
@@ -280,8 +285,7 @@
             "product_image": "shopify://shop_images/bracelet-gold-chain_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Delicate Gold Chain Bracelet",
             "product_price": "$1,200",
-            "product_category": "bracelets",
-            "product_description": "Elegant gold chain bracelet with delicate links and sophisticated design."
+            "product_category": "bracelets"
           }
         },
         "product_bracelet_2": {
@@ -290,8 +294,7 @@
             "product_image": "shopify://shop_images/bracelet-interlocking_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Interlocking Chain Bracelet",
             "product_price": "$2,800",
-            "product_category": "bracelets",
-            "product_description": "Unique interlocking chain design with modern appeal and luxurious finish."
+            "product_category": "bracelets"
           }
         },
         "product_bracelet_3": {
@@ -300,8 +303,7 @@
             "product_image": "shopify://shop_images/bracelet-diamond-accent_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Accent Bracelet",
             "product_price": "$3,500",
-            "product_category": "bracelets",
-            "product_description": "Sophisticated bracelet with diamond accents and premium craftsmanship."
+            "product_category": "bracelets"
           }
         },
         "product_cuff_1": {
@@ -310,8 +312,7 @@
             "product_image": "shopify://shop_images/cuff-gold-wide_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Wide Gold Cuff",
             "product_price": "$2,500",
-            "product_category": "cuffs",
-            "product_description": "Bold wide gold cuff with elegant design and comfortable fit."
+            "product_category": "cuffs"
           }
         },
         "product_cuff_2": {
@@ -320,8 +321,7 @@
             "product_image": "shopify://shop_images/cuff-diamond_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Cuff",
             "product_price": "$4,800",
-            "product_category": "cuffs",
-            "product_description": "Luxurious diamond-studded cuff with exceptional sparkle and elegance."
+            "product_category": "cuffs"
           }
         },
         "product_cuff_3": {
@@ -330,8 +330,7 @@
             "product_image": "shopify://shop_images/cuff-silver-textured_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Textured Silver Cuff",
             "product_price": "$1,800",
-            "product_category": "cuffs",
-            "product_description": "Artistic textured silver cuff with unique pattern and modern appeal."
+            "product_category": "cuffs"
           }
         },
         "product_ring_1": {
@@ -340,8 +339,7 @@
             "product_image": "shopify://shop_images/ring-diamond-solitaire_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Solitaire Ring",
             "product_price": "$5,200",
-            "product_category": "rings",
-            "product_description": "Classic diamond solitaire ring with exceptional brilliance and timeless design."
+            "product_category": "rings"
           }
         },
         "product_ring_2": {
@@ -350,8 +348,7 @@
             "product_image": "shopify://shop_images/ring-gold-band_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Gold Band Ring",
             "product_price": "$1,500",
-            "product_category": "rings",
-            "product_description": "Elegant gold band ring with sophisticated simplicity and premium finish."
+            "product_category": "rings"
           }
         },
         "product_ring_3": {
@@ -360,8 +357,7 @@
             "product_image": "shopify://shop_images/ring-gemstone_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Gemstone Ring",
             "product_price": "$3,200",
-            "product_category": "rings",
-            "product_description": "Stunning gemstone ring with vibrant colors and exceptional craftsmanship."
+            "product_category": "rings"
           }
         },
         "product_necklace_1": {
@@ -370,8 +366,7 @@
             "product_image": "shopify://shop_images/necklace-pearl_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Pearl Necklace",
             "product_price": "$2,800",
-            "product_category": "necklaces",
-            "product_description": "Elegant pearl necklace with classic design and timeless beauty."
+            "product_category": "necklaces"
           }
         },
         "product_necklace_2": {
@@ -380,8 +375,7 @@
             "product_image": "shopify://shop_images/necklace-diamond-pendant_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Diamond Pendant Necklace",
             "product_price": "$4,500",
-            "product_category": "necklaces",
-            "product_description": "Sophisticated diamond pendant necklace with exceptional sparkle and elegance."
+            "product_category": "necklaces"
           }
         },
         "product_necklace_3": {
@@ -390,8 +384,7 @@
             "product_image": "shopify://shop_images/necklace-gold-chain_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Gold Chain Necklace",
             "product_price": "$1,800",
-            "product_category": "necklaces",
-            "product_description": "Classic gold chain necklace with premium finish and versatile design."
+            "product_category": "necklaces"
           }
         }
       },
@@ -420,9 +413,14 @@
       ],
       "settings": {
         "show_navigation_arrows": true,
-        "show_dots": false,
-        "padding_top": 80,
-        "padding_bottom": 80
+        "container": "default",
+        "mg_top_desktop": 80,
+        "mg_bottom_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_bottom_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_mobile": 40,
+        "padding_full_width": 15
       }
     },
     "zodiac_section": {
