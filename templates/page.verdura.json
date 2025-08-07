@@ -97,7 +97,7 @@
             "category_name": "BRACELETS",
             "category_handle": "bracelets",
             "category_link": "",
-            "is_active": false
+            "is_active": true
           }
         },
         "category_earclips": {
@@ -148,6 +148,7 @@
         "product_earclip_1": {
           "type": "product",
           "settings": {
+            "product_image": "shopify://shop_images/Mondello-Bangle_Black-Ceramic-Gold_O-V2_PUPA_23_7303adb2-5f58-4d22-8f2a-9ab1bab92ef4.webp",
             "product_title": "Pearl Cage Earclips",
             "product_price": "$2,800",
             "product_category": "earclips"
