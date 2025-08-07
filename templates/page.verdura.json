@@ -106,7 +106,7 @@
           "settings": {
             "category_name": "EARCLIPS",
             "category_handle": "earclips",
-            "collection_handle": "",
+            "collection_handle": "星球",
             "category_link": "",
             "is_active": false
           }
@@ -116,7 +116,7 @@
           "settings": {
             "category_name": "CUFFS",
             "category_handle": "cuffs",
-            "collection_handle": "",
+            "collection_handle": "frontpage",
             "category_link": "",
             "is_active": false
           }
