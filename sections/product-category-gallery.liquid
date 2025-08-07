@@ -412,32 +412,55 @@
       }
 
       // Category filtering
-      this.categories.forEach(category => {
-        category.addEventListener('click', (e) => {
+      this.categories.forEach(categoryLink => {
+        categoryLink.addEventListener('click', (e) => {
           e.preventDefault();
-          const collectionHandle = category.querySelector('[data-collection-handle]').dataset.collectionHandle;
-          this.loadCollection(collectionHandle);
+          const collectionHandle = categoryLink.dataset.collectionHandle;
+          if (collectionHandle) {
+            this.loadCollection(collectionHandle);
+          }
         });
       });
     }
 
     async loadInitialCollection() {
       // Load the active category's collection
-      const activeCategory = this.container.querySelector('.category-item--active');
-      if (activeCategory) {
-        const collectionHandle = activeCategory.querySelector('[data-collection-handle]').dataset.collectionHandle;
-        await this.loadCollection(collectionHandle);
+      const activeCategoryLink = this.container.querySelector('.category-link--active');
+      if (activeCategoryLink) {
+        const collectionHandle = activeCategoryLink.dataset.collectionHandle;
+        if (collectionHandle) {
+          await this.loadCollection(collectionHandle);
+        }
+      } else {
+        // 如果没有默认激活的分类，加载第一个分类
+        const firstCategoryLink = this.container.querySelector('[data-collection-handle]');
+        if (firstCategoryLink) {
+          const collectionHandle = firstCategoryLink.dataset.collectionHandle;
+          if (collectionHandle) {
+            await this.loadCollection(collectionHandle);
+          }
+        }
       }
     }
 
     async loadCollection(collectionHandle) {
-      if (!collectionHandle) return;
+      if (!collectionHandle || collectionHandle.trim() === '') {
+        // 如果collection handle为空，显示空状态
+        this.showEmptyState();
+        this.updateCategoryActiveState(collectionHandle);
+        return;
+      }
 
       this.showLoading();
 
       try {
         // Fetch collection products from Shopify
         const response = await fetch(`/collections/${collectionHandle}/products.json?limit=12`);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const data = await response.json();
         
         this.currentProducts = data.products || [];
@@ -453,6 +476,8 @@
         
       } catch (error) {
         console.error('Error loading collection:', error);
+        this.showEmptyState();
+        this.updateCategoryActiveState(collectionHandle);
         this.hideLoading();
       }
     }
@@ -510,10 +535,16 @@
     }
 
     updateCategoryActiveState(collectionHandle) {
+      // 移除所有分类的激活状态
       this.container.querySelectorAll('.category-item').forEach(item => {
         item.classList.remove('category-item--active');
+        const categoryLink = item.querySelector('.category-link');
+        if (categoryLink) {
+          categoryLink.classList.remove('category-link--active');
+        }
       });
       
+      // 为选中的分类添加激活状态
       const activeCategory = this.container.querySelector(`[data-collection-handle="${collectionHandle}"]`);
       if (activeCategory) {
         activeCategory.closest('.category-item').classList.add('category-item--active');
@@ -531,6 +562,22 @@
       if (this.loadingElement) {
         this.loadingElement.style.display = 'none';
       }
+    }
+
+    showEmptyState() {
+      this.slidesContainer.innerHTML = `
+        <div class="product-slide product-slide--active" style="grid-column: 1/-1; text-align: center; padding: 60px 20px;">
+          <div class="product-empty-state">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="margin: 0 auto 20px; opacity: 0.3;">
+              <rect width="80" height="80" fill="#f5f5f5" rx="8"/>
+              <path d="M25 35L40 50L55 35" stroke="#ccc" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3 style="color: #999; font-size: 18px; margin: 0 0 10px 0;">暂无产品</h3>
+            <p style="color: #ccc; font-size: 14px; margin: 0;">该分类下暂时没有产品可展示</p>
+          </div>
+        </div>
+      `;
+      this.totalSlides = 0;
     }
 
     prevSlide() {
