@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_banner": {
@@ -88,92 +79,103 @@
         "mg_bottom_mobile": 0
       }
     },
-    "necklaces_section": {
+    "bracelets_section": {
       "type": "product-category-filter",
       "blocks": {
-        "category_bracelets": {
+        "category_all": {
           "type": "category",
           "settings": {
-            "category_name": "BRACELETS",
-            "category_handle": "bracelets",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_earrings": {
-          "type": "category",
-          "settings": {
-            "category_name": "EARRINGS",
-            "category_handle": "earrings",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_rings": {
-          "type": "category",
-          "settings": {
-            "category_name": "RINGS",
-            "category_handle": "rings",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_brooches": {
-          "type": "category",
-          "settings": {
-            "category_name": "BROOCHES",
-            "category_handle": "brooches",
-            "category_link": "",
-            "is_active": false
-          }
-        },
-        "category_necklaces": {
-          "type": "category",
-          "settings": {
-            "category_name": "NECKLACES",
-            "category_handle": "necklaces",
+            "category_name": "ALL",
+            "category_handle": "all",
             "category_link": "",
             "is_active": true
           }
         },
-        "product_star_pendant": {
-          "type": "product",
+        "category_gold": {
+          "type": "category",
           "settings": {
-            "product_title": "Star Pendant Necklace",
-            "product_price": "$2,500",
-            "product_category": "necklaces"
+            "category_name": "GOLD",
+            "category_handle": "gold",
+            "category_link": "",
+            "is_active": false
           }
         },
-        "product_gold_chain": {
-          "type": "product",
+        "category_silver": {
+          "type": "category",
           "settings": {
-            "product_title": "Classic Gold Chain",
-            "product_price": "$1,800",
-            "product_category": "necklaces"
+            "category_name": "SILVER",
+            "category_handle": "silver",
+            "category_link": "",
+            "is_active": false
           }
         },
-        "product_gemstone": {
+        "category_gemstone": {
+          "type": "category",
+          "settings": {
+            "category_name": "GEMSTONE",
+            "category_handle": "gemstone",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_new_arrivals": {
+          "type": "category",
+          "settings": {
+            "category_name": "NEW ARRIVALS",
+            "category_handle": "new-arrivals",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "category_best_sellers": {
+          "type": "category",
+          "settings": {
+            "category_name": "BEST SELLERS",
+            "category_handle": "best-sellers",
+            "category_link": "",
+            "is_active": false
+          }
+        },
+        "product_bracelet_1": {
           "type": "product",
           "settings": {
-            "product_title": "Gemstone Necklace with Blue and Green Stones",
-            "product_price": "$3,200",
-            "product_category": "necklaces"
+            "product_title": "Delicate Gold Chain with Coin Charms",
+            "product_price": "$1,200",
+            "product_category": "bracelets"
+          }
+        },
+        "product_bracelet_2": {
+          "type": "product",
+          "settings": {
+            "product_title": "Interlocking Chain Bracelet",
+            "product_price": "$2,800",
+            "product_category": "bracelets"
+          }
+        },
+        "product_bracelet_3": {
+          "type": "product",
+          "settings": {
+            "product_title": "Diamond Accent Bracelet",
+            "product_price": "$3,500",
+            "product_category": "bracelets"
           }
         }
       },
       "block_order": [
-        "category_bracelets",
-        "category_earrings",
-        "category_rings",
-        "category_brooches",
-        "category_necklaces",
-        "product_star_pendant",
-        "product_gold_chain",
-        "product_gemstone"
+        "category_all",
+        "category_gold",
+        "category_silver",
+        "category_gemstone",
+        "category_new_arrivals",
+        "category_best_sellers",
+        "product_bracelet_1",
+        "product_bracelet_2",
+        "product_bracelet_3"
       ],
       "settings": {
-        "filter_title": "Categories",
+        "filter_title": "Bracelets",
         "show_navigation_arrows": true,
+        "show_dots": true,
         "container": "default",
         "mg_top_desktop": 80,
         "mg_bottom_desktop": 80,
@@ -220,7 +222,7 @@
             "mg_top_des": 8,
             "enable_des_hover": false,
             "button_style": "button_1",
-            "button": "Shop Now",
+            "button": "",
             "link": "",
             "fontsize_btn": 16,
             "button_width": 190,
@@ -326,7 +328,7 @@
             "mg_top_des": 8,
             "enable_des_hover": false,
             "button_style": "button_1",
-            "button": "Shop Now",
+            "button": "",
             "link": "",
             "fontsize_btn": 16,
             "button_width": 190,
@@ -467,7 +469,7 @@
             "title_1": "",
             "color_title_1": "#ffffff",
             "des_type_1": "html",
-            "des_1": "Nullam aliquet",
+            "des_1": "Lifestyle photography showcasing Verdura jewelry in elegant settings",
             "des_rich_1": "",
             "color_des_1": "#ffffff",
             "button_1": "",
@@ -489,7 +491,7 @@
             "title_2": "",
             "color_title_2": "#ffffff",
             "des_type_2": "html",
-            "des_2": "Nullam aliquet",
+            "des_2": "Elegant jewelry styling with gold accents and sophisticated design",
             "des_rich_2": "",
             "color_des_2": "#ffffff",
             "button_2": "",
@@ -511,7 +513,7 @@
             "title_3": "",
             "color_title_3": "#ffffff",
             "des_type_3": "html",
-            "des_3": "Nullam aliquet",
+            "des_3": "Detailed view of gold rings and accessories in lifestyle context",
             "des_rich_3": "",
             "color_des_3": "#ffffff",
             "button_3": "",
@@ -533,7 +535,7 @@
             "title_4": "",
             "color_title_4": "#ffffff",
             "des_type_4": "html",
-            "des_4": "Nullam aliquet",
+            "des_4": "Brand philosophy and craftsmanship details with decorative elements",
             "des_rich_4": "",
             "color_des_4": "#ffffff",
             "button_4": "",
@@ -647,7 +649,7 @@
             "align_items_spacing_top": 10,
             "align_items_spacing_bottom": 10,
             "align_items_spacing_lr": 10,
-            "sub_title": "GIFTS FOR EVERY OCCASION",
+            "sub_title": "",
             "border_sub_title": false,
             "color_sub_title": "#666666",
             "fontsize_sub_title": 14,
@@ -661,7 +663,7 @@
             "enable_style_italic": false,
             "border_title": "border_hover",
             "border_color_title": "",
-            "des": "A collection of special pieces for gifting and receiving.",
+            "des": "Wearable Art, Made to Last",
             "color_des": "#666666",
             "fontsize_des": 16,
             "mg_top_des": 20,
@@ -840,7 +842,7 @@
             "align_items_spacing_top": 10,
             "align_items_spacing_bottom": 10,
             "align_items_spacing_lr": 10,
-            "sub_title": "OUR SALON",
+            "sub_title": "",
             "border_sub_title": false,
             "color_sub_title": "#666666",
             "fontsize_sub_title": 14,
@@ -860,7 +862,7 @@
             "mg_top_des": 8,
             "enable_des_hover": false,
             "button_style": "button_1",
-            "button": "BOOK AN APPOINTMENT",
+            "button": "MAKE AN APPOINTMENT",
             "link": "",
             "fontsize_btn": 16,
             "button_width": 190,
@@ -1127,7 +1129,7 @@
             "mg_top_des": 8,
             "enable_des_hover": false,
             "button_style": "button_1",
-            "button": "READ THE FULL STORY",
+            "button": "LEARN MORE",
             "link": "",
             "fontsize_btn": 16,
             "button_width": 190,
@@ -1173,6 +1175,198 @@
         "display_border_bottom": false,
         "border_color": "#e3e3e3",
         "spotlight_bg": "#fef7f7",
+        "spotlight_bg_gradient": "",
+        "enable_custom_position_title": false,
+        "spotlight_block_title": "",
+        "enable_border_title": false,
+        "color_title": "#232323",
+        "color_title_mb": "",
+        "fontsize_title": 16,
+        "fontsize_title_mb": 22,
+        "margin_bottom_title": 20,
+        "spotlight_block_des": "",
+        "color_des": "#3c3c3c",
+        "margin_bottom_des": 30,
+        "fontsize_des": 16,
+        "title_align": "left",
+        "view_all_style": "style_1",
+        "view_all": "",
+        "view_all_fs": 12,
+        "view_all_align": "center",
+        "font_weight_view_all": "400",
+        "mg_bottom_view": 30,
+        "enable_border_view_all": true,
+        "link_view_all": "",
+        "color_view_all": "#3c3c3c",
+        "display_spotlight_button": false,
+        "button_position": "bottom",
+        "spotlight_button_text": "",
+        "spotlight_button_link": "",
+        "color_button": "#ffffff",
+        "border_color_button": "#232323",
+        "bg_color_button": "#232323",
+        "bg_color_gradient_button": "",
+        "color_button_hover": "#232323",
+        "border_color_button_hover": "#ffffff",
+        "bg_color_button_hover": "#ffffff",
+        "bg_color_gradient_button_hover": "",
+        "maxwidth_button": 230,
+        "mg_top_button": 30,
+        "mg_bottom_button": 30,
+        "enable_plus_icon": false,
+        "color_plus_icon": "#ffffff",
+        "enable_content_border": false,
+        "content_border_color": "#e2e2e2",
+        "enable_shadow": false,
+        "shadow_horizontal_length": 0,
+        "shadow_vertical_length": 0,
+        "shadow_blur_radius": 0,
+        "shadow_spread": 0,
+        "shadow_color": "transparent",
+        "shadow_inset": "no",
+        "mg_top_desktop": 80,
+        "mg_top_tablet": 60,
+        "mg_top_mobile": 40,
+        "mg_bottom_desktop": 80,
+        "mg_bottom_tablet": 60,
+        "mg_bottom_mobile": 40
+      }
+    },
+    "signup_section": {
+      "type": "spotlight-block",
+      "blocks": {
+        "signup_text": {
+          "type": "image",
+          "settings": {
+            "enable_image": false,
+            "title_align": "left",
+            "enable_absolute": false,
+            "align_items": "flex-start",
+            "align_items_spacing_top_bottom_position": 0,
+            "align_items_spacing_top_bottom_position_mb": 0,
+            "bg_color_content": "",
+            "align_items_spacing_top": 10,
+            "align_items_spacing_bottom": 10,
+            "align_items_spacing_lr": 10,
+            "sub_title": "",
+            "border_sub_title": false,
+            "color_sub_title": "#666666",
+            "fontsize_sub_title": 14,
+            "font_weight_sub_title": "500",
+            "mg_bottom_sub_title": 10,
+            "title": "Sign up now.",
+            "color_title": "#333333",
+            "fontsize_title": 36,
+            "fontsize_title_mb": 20,
+            "font_weight_title": "500",
+            "enable_style_italic": false,
+            "border_title": "border_hover",
+            "border_color_title": "",
+            "des": "",
+            "color_des": "#666666",
+            "fontsize_des": 16,
+            "mg_top_des": 8,
+            "enable_des_hover": false,
+            "button_style": "button_1",
+            "button": "",
+            "link": "",
+            "fontsize_btn": 16,
+            "button_width": 190,
+            "bg_opacity_button": 1,
+            "enable_button_custom_border": false,
+            "enable_button_hover": false,
+            "btn_text_transform": "uppercase",
+            "btn_icon": "",
+            "mg_top_btn": 30,
+            "color_button": "#ffffff",
+            "border_color_button": "#232323",
+            "bg_color_button": "#333333",
+            "bg_color_button_gradient": "",
+            "color_button_hover": "#ffffff",
+            "border_color_button_hover": "#232323",
+            "bg_color_button_hover": "#232323",
+            "bg_color_button_gradient_hover": ""
+          }
+        },
+        "signup_form": {
+          "type": "image",
+          "settings": {
+            "enable_image": false,
+            "title_align": "center",
+            "enable_absolute": false,
+            "align_items": "center",
+            "align_items_spacing_top_bottom_position": 0,
+            "align_items_spacing_top_bottom_position_mb": 0,
+            "bg_color_content": "#fef7f7",
+            "align_items_spacing_top": 10,
+            "align_items_spacing_bottom": 10,
+            "align_items_spacing_lr": 10,
+            "sub_title": "",
+            "border_sub_title": false,
+            "color_sub_title": "#666666",
+            "fontsize_sub_title": 14,
+            "font_weight_sub_title": "500",
+            "mg_bottom_sub_title": 10,
+            "title": "",
+            "color_title": "#333333",
+            "fontsize_title": 36,
+            "fontsize_title_mb": 20,
+            "font_weight_title": "500",
+            "enable_style_italic": false,
+            "border_title": "border_hover",
+            "border_color_title": "",
+            "des": "Join our email list for updates on new collections, events, and exclusive content.",
+            "color_des": "#666666",
+            "fontsize_des": 16,
+            "mg_top_des": 8,
+            "enable_des_hover": false,
+            "button_style": "button_1",
+            "button": "Sign Up",
+            "link": "",
+            "fontsize_btn": 16,
+            "button_width": 190,
+            "bg_opacity_button": 1,
+            "enable_button_custom_border": false,
+            "enable_button_hover": false,
+            "btn_text_transform": "uppercase",
+            "btn_icon": "",
+            "mg_top_btn": 30,
+            "color_button": "#ffffff",
+            "border_color_button": "#232323",
+            "bg_color_button": "#333333",
+            "bg_color_button_gradient": "",
+            "color_button_hover": "#ffffff",
+            "border_color_button_hover": "#232323",
+            "bg_color_button_hover": "#232323",
+            "bg_color_button_gradient_hover": ""
+          }
+        }
+      },
+      "block_order": [
+        "signup_text",
+        "signup_form"
+      ],
+      "settings": {
+        "container": "default",
+        "padding_full_width": 0,
+        "disable_padding_content": false,
+        "mg_minus_desktop": 0,
+        "mg_minus_mobile": 0,
+        "block_layout": "grid",
+        "spotlight_block_swipe_on_mobile": "slider",
+        "column": "2",
+        "column_mb": "1",
+        "center_mode": false,
+        "item_distance": 0,
+        "item_radius": 0,
+        "enable_arrows": false,
+        "enable_arrows_mb": false,
+        "position_horizontal_slick_arrow": "0",
+        "enable_dots": false,
+        "enable_dots_mb": true,
+        "display_border_bottom": false,
+        "border_color": "#e3e3e3",
+        "spotlight_bg": "#ffffff",
         "spotlight_bg_gradient": "",
         "enable_custom_position_title": false,
         "spotlight_block_title": "",
@@ -1429,10 +1623,10 @@
     "newsletter_section": {
       "type": "newsletter-verdura",
       "settings": {
-        "form_title": "WELCOME TO VERDURA",
-        "form_description": "Please join our email list for updates about new collections and special events",
+        "form_title": "Sign up now.",
+        "form_description": "Join our email list for updates on new collections, events, and exclusive content.",
         "input_placeholder": "Enter Email Address Here",
-        "button_text": "Subscribe",
+        "button_text": "Sign Up",
         "form_action": "",
         "mg_top_desktop": 80,
         "mg_bottom_desktop": 80,
@@ -1445,13 +1639,14 @@
   },
   "order": [
     "hero_banner",
-    "necklaces_section",
+    "bracelets_section",
     "zodiac_section",
     "lifestyle_section",
     "very_verdura_section",
     "visit_section",
     "new_arrivals_section",
     "heritage_story_section",
+    "signup_section",
     "instagram_section",
     "newsletter_section"
   ]
