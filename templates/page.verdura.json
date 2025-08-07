@@ -1,4 +1,12 @@
-
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_banner": {
@@ -88,7 +96,7 @@
           "settings": {
             "category_name": "BRACELETS",
             "category_handle": "bracelets",
-            "collection_handle": "bracelets",
+            "collection_handle": "frontpage",
             "category_link": "",
             "is_active": true
           }
@@ -98,7 +106,7 @@
           "settings": {
             "category_name": "EARCLIPS",
             "category_handle": "earclips",
-            "collection_handle": "earclips",
+            "collection_handle": "",
             "category_link": "",
             "is_active": false
           }
@@ -108,7 +116,7 @@
           "settings": {
             "category_name": "CUFFS",
             "category_handle": "cuffs",
-            "collection_handle": "cuffs",
+            "collection_handle": "",
             "category_link": "",
             "is_active": false
           }
@@ -118,7 +126,7 @@
           "settings": {
             "category_name": "RINGS",
             "category_handle": "rings",
-            "collection_handle": "rings",
+            "collection_handle": "",
             "category_link": "",
             "is_active": false
           }
@@ -128,7 +136,7 @@
           "settings": {
             "category_name": "NECKLACES",
             "category_handle": "necklaces",
-            "collection_handle": "necklaces",
+            "collection_handle": "",
             "category_link": "",
             "is_active": false
           }
@@ -138,7 +146,7 @@
           "settings": {
             "category_name": "VIEW COLLECTION",
             "category_handle": "view-collection",
-            "collection_handle": "all",
+            "collection_handle": "",
             "category_link": "/collections/all",
             "is_active": false
           }
