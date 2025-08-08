@@ -108,7 +108,17 @@
         <div class="body-content-wrapper">
             <a class="skip-to-content-link button visually-hidden" href="#MainContent">{{ "accessibility.skip_to_text" | t }}</a>
             {% render 'preload-screen' %}
-            {% sections 'header-group' %}
+            {%- comment -%} Check if this is the verdura page {%- endcomment -%}
+            {%- assign is_verdura_page = false -%}
+            {%- if template.name == 'page' and page.handle == 'verdura' -%}
+              {%- assign is_verdura_page = true -%}
+            {%- endif -%}
+            
+            {%- comment -%} Show default header only if not verdura page {%- endcomment -%}
+            {%- unless is_verdura_page -%}
+              {% sections 'header-group' %}
+            {%- endunless -%}
+            
             {% render 'wrapper-header' %}
 
             {%- if settings.layout_body == 'boxed' -%}

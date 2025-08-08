@@ -1,3 +1,14 @@
+{%- comment -%} Check if this is the verdura page {%- endcomment -%}
+{%- assign is_verdura_page = false -%}
+{%- if template.name == 'page' and page.handle == 'verdura' -%}
+  {%- assign is_verdura_page = true -%}
+{%- endif -%}
+
+{%- comment -%} If it's verdura page, use custom header {%- endcomment -%}
+{%- if is_verdura_page -%}
+  {% render 'header-verdura' %}
+{%- endif -%}
+
 {%- if request.page_type == 'index' -%}
     {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
     <script type="application/ld+json">
