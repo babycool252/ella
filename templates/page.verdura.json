@@ -70,6 +70,7 @@
         "item_distance": 0,
         "custom_image_banner_bg": "#000000",
         "custom_image_banner_bg_gradient": "",
+        "custom_image_bg_image": "shopify://shop_images/prairie-woman-at-sunset.jpg",
         "title_align": "left",
         "custom_image_banner_title": "",
         "enable_border_title": false,
