@@ -1,21 +1,41 @@
 /* Header Verdura Styles */
 .header-verdura {
-  background: var(--background-color, #ffffff);
+  background: var(--bg-color, #ffffff);
   color: var(--text-color, #333333);
-  padding: var(--padding-top, 20px) 0 var(--padding-bottom, 20px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 100;
 }
 
 .header-verdura__container {
-  max-width: 1400px;
   margin: 0 auto;
   padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
+}
+
+/* Container widths */
+.header-verdura__container.container-default {
+  max-width: 1400px;
+}
+
+.header-verdura__container.container-fullwidth {
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.header-verdura__container.container-1170 {
+  max-width: 1170px;
+}
+
+.header-verdura__container.container-1570 {
+  max-width: 1570px;
+}
+
+.header-verdura__container.container-1770 {
+  max-width: 1770px;
 }
 
 /* 左侧菜单按钮 */
