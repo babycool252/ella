@@ -1,24 +1,4 @@
-/* 为verdura页面的hero section添加特殊样式 */
-.template-page-verdura .custom-image-banner-block {
-  position: relative;
-  z-index: 1;
-}
 
-.template-page-verdura .custom-image-banner-block .content_absolute {
-  position: relative;
-  z-index: 2;
-}
-
-.template-page-verdura .custom-image-banner-block .image-zoom {
-  position: relative;
-  z-index: 1;
-}
-
-/* 确保hero section内容在header下方正确显示 */
-.template-page-verdura .custom-image-banner-block .content {
-  position: relative;
-  z-index: 3;
-}
 
 .custom-image-banner-block .halo-block-header .title {
     margin-bottom: 45px;

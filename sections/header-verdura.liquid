@@ -1,7 +1,7 @@
 {{ 'component-header-verdura.css' | asset_url | stylesheet_tag }}
 
 <header class="header header-verdura section-{{ section.id }}-padding" 
-        style="--bg-color: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }}; --padding-top: {{ section.settings.padding_top }}px; --padding-bottom: {{ section.settings.padding_bottom }}px;">
+        style="--bg-color: {{ section.settings.background }}; --padding-top: {{ section.settings.padding_top }}px; --padding-bottom: {{ section.settings.padding_bottom }}px;">
   <div class="header-verdura__container container-{{ section.settings.container }}">
     <!-- 左侧 MENU -->
     <div class="header-verdura__left">
@@ -122,22 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // 滚动检测 - 添加scrolled类
-  function handleScroll() {
-    if (header) {
-      if (window.scrollY > 50) {
-        header.classList.add('header-verdura--scrolled');
-      } else {
-        header.classList.remove('header-verdura--scrolled');
-      }
-    }
-  }
 
-  // 监听滚动事件
-  window.addEventListener('scroll', handleScroll);
-  
-  // 初始化时检查滚动位置
-  handleScroll();
 });
 </script>
 
