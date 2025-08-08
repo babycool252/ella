@@ -18,6 +18,7 @@
             "item_width": "100%",
             "item_border_radius": 0,
             "item_spacing": 0,
+            "image": "shopify://shop_images/ocean-water-with-swimmers.jpg",
             "title_align": "left",
             "align_items": "center",
             "align_items_spacing": 0,
