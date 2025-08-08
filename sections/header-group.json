@@ -1,12 +1,4 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+
 {
   "type": "header",
   "name": "Header Group",
@@ -392,12 +384,19 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "header-verdura": {
+      "type": "header-verdura",
+      "settings": {
+        "container": "default",
+        "background_color": "#ffffff",
+        "text_color": "#333333",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
-    "announcement-bar",
-    "header-classic",
-    "9c03747e-b054-4db8-8194-5a35c71f82ca",
-    "header-mobile"
+    "header-verdura"
   ]
 }

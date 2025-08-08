@@ -1,0 +1,402 @@
+/* Header Verdura Styles */
+.header-verdura {
+  background: var(--background-color, #ffffff);
+  color: var(--text-color, #333333);
+  padding: var(--padding-top, 20px) 0 var(--padding-bottom, 20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 100;
+}
+
+.header-verdura__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+/* 左侧菜单按钮 */
+.header-verdura__left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-verdura__menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: opacity 0.3s ease;
+}
+
+.header-verdura__menu-button:hover {
+  opacity: 0.7;
+}
+
+.header-verdura__menu-text {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-color, #333333);
+  font-family: 'Arial', sans-serif;
+}
+
+/* 中间LOGO区域 */
+.header-verdura__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-verdura__logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.header-verdura__logo-link:hover {
+  opacity: 0.8;
+}
+
+.header-verdura__crown {
+  margin-bottom: 8px;
+  color: var(--text-color, #333333);
+}
+
+.header-verdura__crown svg {
+  width: 32px;
+  height: 20px;
+}
+
+.header-verdura__logo-text {
+  text-align: center;
+}
+
+.header-verdura__brand-name {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-color, #333333);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin-bottom: 2px;
+}
+
+.header-verdura__established {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-color, #333333);
+  opacity: 0.7;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 右侧购物车 */
+.header-verdura__right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-verdura__cart-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color, #333333);
+  transition: opacity 0.3s ease;
+  padding: 8px 0;
+}
+
+.header-verdura__cart-link:hover {
+  opacity: 0.7;
+}
+
+.header-verdura__cart-text {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+}
+
+.header-verdura__cart-count {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: 'Arial', sans-serif;
+  min-width: 12px;
+  text-align: center;
+}
+
+/* 菜单抽屉 */
+.header-verdura__menu-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.header-verdura__menu-drawer--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header-verdura__menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.header-verdura__menu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  background: #ffffff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-verdura__menu-drawer--open .header-verdura__menu-content {
+  transform: translateX(0);
+}
+
+.header-verdura__menu-header {
+  padding: 30px 30px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-verdura__menu-title {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333333;
+}
+
+.header-verdura__menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #333333;
+  transition: opacity 0.3s ease;
+}
+
+.header-verdura__menu-close:hover {
+  opacity: 0.7;
+}
+
+.header-verdura__navigation {
+  padding: 30px;
+}
+
+.header-verdura__nav-link {
+  display: block;
+  padding: 15px 0;
+  color: #333333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: opacity 0.3s ease;
+}
+
+.header-verdura__nav-link:hover {
+  opacity: 0.7;
+}
+
+.header-verdura__nav-link:last-child {
+  border-bottom: none;
+}
+
+/* 阻止滚动当菜单打开时 */
+body.header-verdura__menu-open {
+  overflow: hidden;
+}
+
+/* 响应式设计 */
+@media (max-width: 1199px) {
+  .header-verdura__container {
+    padding: 0 30px;
+  }
+
+  .header-verdura__brand-name {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+
+  .header-verdura__crown svg {
+    width: 28px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-verdura__container {
+    padding: 0 20px;
+    min-height: 50px;
+  }
+
+  .header-verdura__brand-name {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .header-verdura__established {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .header-verdura__crown svg {
+    width: 24px;
+    height: 16px;
+  }
+
+  .header-verdura__crown {
+    margin-bottom: 6px;
+  }
+
+  .header-verdura__menu-text,
+  .header-verdura__cart-text {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .header-verdura__menu-content {
+    width: 280px;
+  }
+
+  .header-verdura__menu-header {
+    padding: 25px 25px 15px;
+  }
+
+  .header-verdura__menu-title {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .header-verdura__navigation {
+    padding: 25px;
+  }
+
+  .header-verdura__nav-link {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-verdura__container {
+    padding: 0 15px;
+  }
+
+  .header-verdura__brand-name {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .header-verdura__established {
+    font-size: 8px;
+  }
+
+  .header-verdura__crown svg {
+    width: 20px;
+    height: 14px;
+  }
+
+  .header-verdura__menu-text,
+  .header-verdura__cart-text {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .header-verdura__menu-content {
+    width: 260px;
+  }
+}
+
+/* 粘性header变体（可选） */
+.header-verdura--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .header-verdura {
+    background: #1a1a1a;
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .header-verdura__menu-content {
+    background: #1a1a1a;
+  }
+  
+  .header-verdura__menu-title,
+  .header-verdura__nav-link,
+  .header-verdura__menu-close {
+    color: #ffffff;
+  }
+  
+  .header-verdura__nav-link {
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* 平滑动画 */
+.header-verdura * {
+  transition-property: opacity, transform, color, background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* 无障碍改进 */
+.header-verdura__menu-button:focus,
+.header-verdura__cart-link:focus,
+.header-verdura__logo-link:focus,
+.header-verdura__menu-close:focus,
+.header-verdura__nav-link:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* 打印样式 */
+@media print {
+  .header-verdura__menu-drawer {
+    display: none !important;
+  }
+}
