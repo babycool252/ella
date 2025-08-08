@@ -417,9 +417,9 @@
         "menu": "main-menu",
         "menu_title": "Menu",
         "container": "default",
-        "background": "#ffffff",
-        "gradient": "",
-        "padding_top": 15,
+        "background_color": "#ffffff",
+        "text_color": "#333333",
+        "padding_top": 16,
         "padding_bottom": 16
       }
     }
